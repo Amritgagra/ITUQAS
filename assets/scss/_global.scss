@@ -43,6 +43,9 @@ a {
 .mb-50 {
     margin-bottom: 50px;
 }
+.mb-40 {
+    margin-bottom: 40px;
+}
 .mt-50 {
     margin-top: 50px;
 }
@@ -76,6 +79,10 @@ a {
     background: $clr-dark;
 }
 
+.text__light {
+    color: $clr-light;
+}
+
 // .text-sm  {
 //     font-size: 35px;
 
@@ -94,6 +101,13 @@ a {
         position: static;
         top: 0;
     }
+}
+.section__subtitle {
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Cabin', sans-serif;
 }
 
 .block-padding{
@@ -115,8 +129,11 @@ a {
         margin-block: 100px;
     }
 }
+.font-Apercu-italic {
+    font-family: 'Apercu-Medium-Italic';
+}
 .font-Apercu {
-    font-family: "Apercu";
+    font-family: 'Apercu-Medium';
 }
 // .font-s-70 {
 //     font-size: 70px;
@@ -186,6 +203,7 @@ a {
 // aboutus 
 .about-us {
     border-radius: 32px;
+    margin-top: -32px;
     &__content {
         max-width: 1072px;
         margin: 0 auto;

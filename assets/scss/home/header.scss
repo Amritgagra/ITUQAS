@@ -1,17 +1,17 @@
 @import '../variables';
 @import '../mixins';
 .header{
-    padding-block: 20px;
+    padding-block: 4px;
     z-index: 99;
 
+
   
-    // .logo{
-    //     width: 300px;
-    //     @include mq(xxxl){
-    //       width: 250px;
-    //     }
-       
-    // }
+    .logo{
+      font-size:35px;
+      line-height: 43px;
+      font-family: 'Apercu-Medium';
+      color: $clr-accent;
+    }
    
       &.active{
         position: fixed;
@@ -56,7 +56,26 @@
     .navbar-nav {
        width: 100%;
        .nav-item {
-        padding-inline:40px;
+        padding-inline:50px;
+         .nav-link:after {
+          content: '';
+          display: block;
+          position: relative;
+          top: 5px;
+          background-size: contain;
+          min-height: 5px;
+          opacity: 0;
+          transition: opacity .3s ease-in-out;
+        }
+        &:nth-child(1) .nav-link:after {
+          background: url(../images/header/nav-link-about.svg) no-repeat center;
+        }
+        &:nth-child(2) .nav-link:after {
+          background: url(../images/header/nav-link-leistungen.svg) no-repeat center;
+        }
+        &:nth-child(3) .nav-link:after {
+          background: url(../images/header/nav-icon-case.svg) no-repeat center;
+        }
        }
      
       .nav-link{
@@ -67,12 +86,18 @@
         font-weight: 400;
         transition: color .5s ease-in-out;
         padding: 0;
+        position: relative;
         @include mq(xxxl){
           margin-bottom: 0px;
          font-size: 25px;
         }
+
+        
         &:hover,&:focus{
           color: $clr-white;
+        }
+        &:hover::after,&:focus::after{
+          opacity: 1;
         }
         &.active {
           color: $clr-accent;

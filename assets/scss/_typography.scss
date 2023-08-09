@@ -3,8 +3,16 @@
 @import './mixins';
 
 @font-face {
-    font-family: "Apercu";
-    src: url(./font/Apercu-Medium.woff2) format("woff2");
+    font-family: 'Apercu-Medium-Italic';
+    src:
+     url(./font/Apercu-Medium-Italic.woff2) format('woff2')
+ 
+}
+@font-face {
+    font-family: 'Apercu-Medium';
+    src:
+     url(./font/Apercu-Medium.woff2) format('woff2')
+ 
 }
 
 html {
@@ -33,6 +41,7 @@ h1{
     font-size: 150px;
     line-height: 195px;
     font-weight: 600;
+    text-transform: uppercase;
     @include mq(xxl){
         font-size: 80px;
         line-height: 90px;

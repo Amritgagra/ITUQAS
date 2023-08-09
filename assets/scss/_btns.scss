@@ -3,5 +3,67 @@
     line-height: 25px;
     font-family: 'Hanken Grotesk', sans-serif;
     color: $clr-light;
+    padding: 11px 30px;
+    border-image-slice: 20;
+    border-image-width: 20;
+    border-image-outset: 1;
+    border-image-repeat: stretch;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
 }
+
+.btn__accent {
+    
+    border-image-source: url(../images/btn/btn-accent-bg.svg);
+  
+    svg {
+        transition: transform .3s ease-in-out;
+        g {
+            transition: opacity .3s ease-in-out;
+        }
+    }
+    &:hover,
+    &:focus {
+        color: $clr-light !important;
+        g {
+            opacity: 1;
+        }
+        svg {
+            transform: translateX(5px);
+        }
+    }
+  
+    &.border-img-top {
+        border-image-source: url(../images/btn/btn-accent-top-bg.svg);
+        min-height: 54px;
+        min-width: 281px;
+    }
+
+}
+.btn__primary {
+    border-image-source: url(../images/btn/btn-primary-bg.svg);
+    color: $clr-dark;
+    min-height: 54px;
+    min-width: 239px;
+    svg {
+        transition: transform .3s ease-in-out;
+        g {
+            transition: opacity .3s ease-in-out;
+        }
+    }
+    &:hover,
+    &:focus {
+        color: $clr-dark !important;
+        g {
+            opacity: 1;
+        }
+        svg {
+            transform: translateX(5px);
+        }
+    }
+}
+
 
