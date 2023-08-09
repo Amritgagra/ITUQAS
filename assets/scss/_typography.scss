@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,500&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+@import './variables';
+@import './mixins';
+
+@font-face {
+    font-family: "Apercu";
+    src: url(./font/Apercu-Medium.woff2) format("woff2");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    color: $clr-black;
+    @include mq(lg){
+      font-size: 18px;
+      line-height: 30px;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+
+h1{
+    font-size: 150px;
+    line-height: 195px;
+    font-weight: 600;
+    @include mq(xxl){
+        font-size: 80px;
+        line-height: 90px;
+    }
+    @include mq(md){
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+h2{
+    font-size: 45px;
+    line-height: 60px;
+    color: $clr-dark;
+    @include mq(md){
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+h3{
+    font-size: 35px;
+    line-height: 55px;
+    font-family: 'Cabin', sans-serif;
+    color: $clr-primary;
+    font-style: italic;
+    @include mq(xl){
+        font-size: 30px;
+        line-height: 40px;
+    }
+    @include mq(md){
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+h4{
+    font-size: 20px;
+    line-height: 60px;
+    font-family: 'Cabin', sans-serif;
+    font-style: italic;
+    color: $clr-accent;
+    @include mq(md){
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+
+.section-title {
+    font-size: 115px;
+    line-height: 90px;
+    font-weight: 500;
+    padding-top: 230px;
+    @include mq(lg){
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
+.section-title-lg {
+    font-size: 60px;
+    line-height: 90px;
+    color: $clr-primary;    
+    @include mq(md){
+        font-size: 32px;
+        line-height: 45px;
+    }
+}

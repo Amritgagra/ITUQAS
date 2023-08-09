@@ -1,0 +1,12 @@
+@import './variables';
+@import './mixins';
+@import './typography';
+@import './btns';
+@import './global';
+
+@media screen and (min-width: 1700px){
+    .container {
+        max-width: 1616px;
+    }   
+}
+
