@@ -50,3 +50,6 @@ AOS.init();
     counter(".counter6", 0, 14, 3000);
    });
   
+   var swiper = new Swiper(".case-slider", {
+    autoplay:true,
+   });

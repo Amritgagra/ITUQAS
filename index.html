@@ -9,13 +9,14 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/header.min.css">
     <link rel="stylesheet" href="assets/css/banner.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
 <body>
-  <header class="header  bg__dark  fixed-top">
+  <header class="header  bg__dark  fixed-top" >
     <nav class="navbar navbar-light navbar-expand-lg ">
       <div class="container">
         <a class="navbar-brand logo " href="#">ITUQAS</a>
@@ -31,13 +32,13 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-center align-items-center flex-grow-1">
               <li class="nav-item">
-                <a class="nav-link" href="#">Über uns</a>
+                <a class="nav-link link-hover link-hover-1" href="#">Über uns</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Leistungen</a>
+                <a class="nav-link link-hover link-hover-2" href="#">Leistungen</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cases</a>
+                <a class="nav-link link-hover link-hover-3" href="#">Cases</a>
               </li>
             </ul> 
               <a class="btn btn__accent font-Apercu " href="#">Kontakt <span><svg xmlns="http://www.w3.org/2000/svg" width="17.957" height="7.638"><defs><clipPath id="clip-path"><path id="Rectangle_52" fill="#D3FF1A" d="M0 0h17.958v7.638H0z" data-name="Rectangle 52"/></clipPath></defs><g id="Group_32" data-name="Group 32" opacity=".5"><g id="Group_26" clip-path="url(#clip-path)" data-name="Group 26"><path class="btn-arrow" id="Path_14" fill="#D3FF1A" d="M15.717 1.806A11.856 11.856 0 0 1 12.879.192a.7.7 0 0 0-.962 0 .686.686 0 0 0 0 .962 11.836 11.836 0 0 0 2.561 1.578c.246.115.5.224.745.331l-7.129.005c-2.468 0-4.953-.077-7.414.143a.7.7 0 0 0-.68.68.685.685 0 0 0 .68.68c2.46-.22 4.946-.141 7.414-.143h6.377c-.146.084-.291.167-.435.254-.873.528-1.713 1.108-2.552 1.687a.7.7 0 0 0-.244.931.687.687 0 0 0 .931.244c.929-.644 1.865-1.291 2.843-1.864.487-.285.985-.553 1.5-.791s1.127-.379 1.352-.943c.526-1.32-1.3-1.768-2.146-2.14m.439 1.647.109.047-.078.041a.705.705 0 0 0-.03-.088m.439.211a.109.109 0 0 0 .027.012c-.015 0-.023 0-.027-.012" data-name="Path 14"/></g></g></svg></span></a>
@@ -49,7 +50,7 @@
   <main>
 
     <!-- banner section start -->
-    <section class="banner  block-padding-xl bg__dark">
+    <section class="banner  block-padding-xl bg__dark" id="top">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -256,19 +257,183 @@
     </section>
     <!-- Services section end -->
 
+    <!-- cases section start -->
+    <section class="cases">
+      <div class="container">
+        <div class="row block-margin" >
+          <div class="col-12" data-aos="fade-up"
+          data-aos-duration="1000">
+            <div class="mb-40 d-flex align-items-baseline gap-2">
+              <h3 class="d-inline-block mb-0">03</h3>
+              <p class="text__xsm mb-0">CASES</p>
+          </div>
+          </div>
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-up"
+          data-aos-duration="1000">
+            <h2 class="mb-70">Erfolgreiche Projekte im Fokus: Beispiele für unsere Leistungen <br> und Ergebnisse</h2>
+              <a href="#" class="btn btn__primary">Mehr zu unseren Cases <span><svg xmlns="http://www.w3.org/2000/svg" width="17.957" height="7.638"><defs><clipPath id="clip-path"><path id="Rectangle_52" fill="#200ADF" d="M0 0h17.958v7.638H0z" data-name="Rectangle 52"/></clipPath></defs><g id="Group_32" data-name="Group 32" opacity=".5"><g id="Group_26" clip-path="url(#clip-path)" data-name="Group 26"><path class="btn-arrow" id="Path_14" fill="#200ADF" d="M15.717 1.806A11.856 11.856 0 0 1 12.879.192a.7.7 0 0 0-.962 0 .686.686 0 0 0 0 .962 11.836 11.836 0 0 0 2.561 1.578c.246.115.5.224.745.331l-7.129.005c-2.468 0-4.953-.077-7.414.143a.7.7 0 0 0-.68.68.685.685 0 0 0 .68.68c2.46-.22 4.946-.141 7.414-.143h6.377c-.146.084-.291.167-.435.254-.873.528-1.713 1.108-2.552 1.687a.7.7 0 0 0-.244.931.687.687 0 0 0 .931.244c.929-.644 1.865-1.291 2.843-1.864.487-.285.985-.553 1.5-.791s1.127-.379 1.352-.943c.526-1.32-1.3-1.768-2.146-2.14m.439 1.647.109.047-.078.041a.705.705 0 0 0-.03-.088m.439.211a.109.109 0 0 0 .027.012c-.015 0-.023 0-.027-.012" data-name="Path 14"/></g></g></svg></span></a>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up"
+          data-aos-duration="1000">
+            <p class="mb-30">Dank unserer umfangreichen Expertise und langjährigen Erfahrung konnten wir zahlreichen Kunden dabei helfen, ihre gesetzlichen Anforderungen zu erfüllen, ihre Logistikabläufe zu optimieren und erfolgreiche Transformationsprozesse zu gestalten. </p>
+            <p class="mb-30">
+              Durch enge Zusammenarbeit und eine ganzheitliche Betrachtung der Herausforderungen entwickeln wir maßgeschneiderte Lösungen, die auf die spezifischen Anforderungen und Bedingungen jedes Kunden zugeschnitten sind.
+            </p>
+            <p class="mb-0"> Lassen Sie sich von unseren erfolgreich abgeschlossenen Projekten inspirieren.</p>
+          </div>
+        </div>
+        <div class="row block-margin">
+          <div class="col-12 px-xxl-0">
+            <p class="text__xsm">ZUFRIEDENE PROJEKTPARTNER</p>
+
+            <div class="cases-slider-wrapper">
+              <div class="case-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="case__slider-content">
+                      <img src="assets/images/cases/case-img-1.svg" alt="">
+                      <img src="assets/images/cases/case-img-2.svg" alt="">
+                      <img src="assets/images/cases/case-img-3.svg" alt="">
+                      <img src="assets/images/cases/case-img-4.svg" alt="">
+                      <img src="assets/images/cases/case-img-5.svg" alt="">
+                      <img src="assets/images/cases/case-img-6.svg" alt="">
+                      <img src="assets/images/cases/case-img-7.svg" alt="">
+                      <img src="assets/images/cases/case-img-8.svg" alt="">
+                      <img src="assets/images/cases/case-img-9.svg" alt="">
+                      <img src="assets/images/cases/case-img-10.svg" alt="">
+                      <img src="assets/images/cases/case-img-11.svg" alt="">
+                      <img src="assets/images/cases/case-img-12.svg" alt="">
+                      <img src="assets/images/cases/case-img-13.svg" alt="">
+                      <img src="assets/images/cases/case-img-14.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="case__slider-content">
+                      <img src="assets/images/cases/case-img-1.svg" alt="">
+                      <img src="assets/images/cases/case-img-12.svg" alt="">
+                      <img src="assets/images/cases/case-img-3.svg" alt="">
+                      <img src="assets/images/cases/case-img-4.svg" alt="">
+                      <img src="assets/images/cases/case-img-14.svg" alt="">
+                      <img src="assets/images/cases/case-img-13.svg" alt="">
+                      <img src="assets/images/cases/case-img-7.svg" alt="">
+                      <img src="assets/images/cases/case-img-8.svg" alt="">
+                      <img src="assets/images/cases/case-img-9.svg" alt="">
+                      <img src="assets/images/cases/case-img-5.svg" alt="">
+                      <img src="assets/images/cases/case-img-11.svg" alt="">
+                      <img src="assets/images/cases/case-img-2.svg" alt="">
+                      <img src="assets/images/cases/case-img-6.svg" alt="">
+                      <img src="assets/images/cases/case-img-5.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="case__slider-content">
+                      <img src="assets/images/cases/case-img-9.svg" alt="">
+                      <img src="assets/images/cases/case-img-2.svg" alt="">
+                      <img src="assets/images/cases/case-img-11.svg" alt="">
+                      <img src="assets/images/cases/case-img-4.svg" alt="">
+                      <img src="assets/images/cases/case-img-5.svg" alt="">
+                      <img src="assets/images/cases/case-img-6.svg" alt="">
+                      <img src="assets/images/cases/case-img-13.svg" alt="">
+                      <img src="assets/images/cases/case-img-8.svg" alt="">
+                      <img src="assets/images/cases/case-img-1.svg" alt="">
+                      <img src="assets/images/cases/case-img-10.svg" alt="">
+                      <img src="assets/images/cases/case-img-3.svg" alt="">
+                      <img src="assets/images/cases/case-img-12.svg" alt="">
+                      <img src="assets/images/cases/case-img-7.svg" alt="">
+                      <img src="assets/images/cases/case-img-14.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cases section end -->
+
   </main>
-  <footer class="footer">
-  
+  <footer class="footer bg__dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 block-padding d-flex justify-content-end">
+          <img src="assets/images/footer/footer-logo.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="row footer__content">
+        <div class="col-lg-6 px-xxl-0">
+          <p class="text-accent fst-italic ">Kontakt</p>
+          <div class="d-flex justify-content-between flex-wrap">
+            <div class="col">
+              <p class="mb-0">Dr. Julia Treichel</p>
+              <a href="tel:+49 (0) 1522  283 2610" class="link">+49 (0) 1522 – 283 2610</a>
+              <a href="mailto:julia.treichel@ituqas.com" class="link">julia.treichel@ituqas.com</a>
+            </div>
+            <div class="col">
+              <p class="mb-0">Peter Pieper</p>
+              <a href="tel:+49 (0) 171  359 1377" class="link">+49 (0) 171 - 359 1377</a>
+              <a href="mailto:julia.treichel@ituqas.com" class="link">peter.pieper@ituqas.com</a>
+            </div>
+            <address class="mb-0 col">
+              <p class="mb-0">
+                Management Consulting <br>
+                80337 München <br>
+                Tumblingerstraße 14
+              </p>
+            </address>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col">
+              <p class="text-accent fst-italic">Social Media</p>
+              <div class="d-flex flex-column align-items-start">
+                <a href="#" class="link-hover link-hover-1">LinkedIn</a>
+                <a href="#" class="link-hover link-hover-2">Xing</a>
+              </div>
+            </div>
+            <div class="col">
+              <p class="text-accent fst-italic">Sitemap</p>
+              <div class="d-flex flex-column align-items-start">
+                <a href="#" class="link-hover link-hover-1">Über uns</a>
+                <a href="#" class="link-hover link-hover-2">Cases</a>
+                <a href="#" class="link-hover link-hover-3">Kontakt</a>
+              </div>
+            </div>
+            <div class="col">
+              <p class="text-accent fst-italic">Rechtliche Hinweise</p>
+              <div class="d-flex flex-column align-items-start">
+                <a href="#" class="link-hover link-hover-1">Impressum</a>
+                <a href="#" class="link-hover link-hover-2">Datenschutz</a>
+                <a href="#" class="link-hover link-hover-3">Cookie Hinweise</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 px-xxl-0">
+          <div class="copyright__content d-flex align-items-center justify-content-between">
+            <p class="mb-0">Copyright 2023 ITUQAS GmbH | <span class="opacity-50">Website made by Trendmarke</span></p>
+            <a href="#top" class="d-block back-to-top">zurück zum Anfang <span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.191" height="26.064" viewBox="0 0 22.191 26.064"><defs><clipPath id="a"><rect width="24.555" height="10.205" fill="#d3ff1a"/></clipPath></defs><g transform="translate(0 20.357) rotate(-56)" opacity="0.5"><g clip-path="url(#a)"><path d="M24.175.221A1.76,1.76,0,0,0,23.031,0H20.189A.8.8,0,0,0,19.395.8a.808.808,0,0,0,.795.795h.794a25.047,25.047,0,0,1-10.5,3.19c-.639.045-1.28.06-1.92.057.62-.842,1.081-1.88.186-2.683a2.91,2.91,0,0,0-1.884-.468,8.076,8.076,0,0,0-2.385.259c-1.22.344-2.367,1.483-1.872,2.843.359.984,1.4,1.264,2.39,1.4A14.734,14.734,0,0,1,.547,8.626c-.963.327-.55,1.863.422,1.533A16.5,16.5,0,0,0,7.18,6.388a26.565,26.565,0,0,0,7.637-.674,26.441,26.441,0,0,0,7.754-3.2l-.337,1.262a.795.795,0,1,0,1.532.423l.492-1.844c.183-.683.607-1.6-.083-2.135M4.09,4.239c-.378-.862,2.184-.967,2.532-.967a6.058,6.058,0,0,1,.832.041,1.014,1.014,0,0,1,.159.05.4.4,0,0,1-.03.1,8.129,8.129,0,0,1-.941,1.2c-.029.031-.06.06-.09.091-.373-.031-.746-.067-1.117-.118-.3-.04-1.2-.06-1.345-.4" transform="translate(0 0)" fill="#d3ff1a"/></g></g></svg>
+              
+            </span></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 
