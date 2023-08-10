@@ -2,10 +2,19 @@
 @import '../mixins';
 .banner{
     min-height: 945px;
+    @include mq(lg) {
+        min-height: 80vh;
+    }
     &__heading-img {
         border-radius: 74px;
         border: 1px solid $clr-light;
         transition: border-radius .5s linear;
+        @include mq(lg) {
+            max-width: 150px;
+        }
+        @include mq(sm) {
+            max-width: 87px;
+        }
         &:hover,
         &:focus {
             border-radius: 15px;
@@ -13,5 +22,8 @@
     }
     &__heading {
         gap: 80px;
+        @include mq(lg) {
+            gap: 20px;
+        }
     }
 }

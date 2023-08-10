@@ -1,15 +1,35 @@
 .banner {
   min-height: 945px;
 }
+@media screen and (max-width: 992px) {
+  .banner {
+    min-height: 80vh;
+  }
+}
 .banner__heading-img {
   border-radius: 74px;
   border: 1px solid #FBFFF9;
   -webkit-transition: border-radius 0.5s linear;
   transition: border-radius 0.5s linear;
 }
+@media screen and (max-width: 992px) {
+  .banner__heading-img {
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner__heading-img {
+    max-width: 87px;
+  }
+}
 .banner__heading-img:hover, .banner__heading-img:focus {
   border-radius: 15px;
 }
 .banner__heading {
   gap: 80px;
+}
+@media screen and (max-width: 992px) {
+  .banner__heading {
+    gap: 20px;
+  }
 }/*# sourceMappingURL=banner.css.map */

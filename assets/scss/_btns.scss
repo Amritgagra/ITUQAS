@@ -13,6 +13,10 @@
     justify-content: center;
     gap: 8px;
     font-weight: 500;
+    @include mq(sm) {
+        font-size: 15px;
+        line-height: 20px;
+    }
 }
 
 .btn__accent {
@@ -48,6 +52,7 @@
     color: $clr-dark;
     min-height: 54px;
     min-width: 239px;
+    padding: 11px 36px;
     svg {
         transition: transform .3s ease-in-out;
         g {
