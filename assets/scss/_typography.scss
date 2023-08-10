@@ -90,21 +90,17 @@ h4{
 }
 
 .section-title {
-    font-size: 115px;
-    line-height: 90px;
+    font-size: 90px;
+    line-height:109px;
     font-weight: 500;
-    padding-top: 230px;
+    font-style: italic;
+    font-family: 'Apercu-Medium';
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $clr-dark;
+    margin-bottom: 20px;
     @include mq(lg){
         font-size: 50px;
         line-height: 70px;
-    }
-}
-.section-title-lg {
-    font-size: 60px;
-    line-height: 90px;
-    color: $clr-primary;    
-    @include mq(md){
-        font-size: 32px;
-        line-height: 45px;
     }
 }
