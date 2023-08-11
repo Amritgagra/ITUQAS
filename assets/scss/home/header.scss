@@ -42,7 +42,7 @@
           opacity: 1;
         }
         &.active {
-          color: $clr-accent;
+          color: $clr-light;
         }
       }
     }
@@ -109,4 +109,8 @@
   &:hover::after,&:focus::after{
     opacity: 1;
   }
+}
+
+.link-hover.active::after {
+  opacity: 1;
 }

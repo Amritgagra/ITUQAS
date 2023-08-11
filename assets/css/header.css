@@ -41,7 +41,7 @@
   opacity: 1;
 }
 .header .navbar-nav .nav-link.active {
-  color: #D3FF1A;
+  color: #FBFFF9;
 }
 .header .navbar-toggler {
   border: 0;
@@ -103,5 +103,9 @@
 }
 
 .link-hover:hover::after, .link-hover:focus::after {
+  opacity: 1;
+}
+
+.link-hover.active::after {
   opacity: 1;
 }/*# sourceMappingURL=header.css.map */

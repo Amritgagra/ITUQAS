@@ -180,6 +180,10 @@ br {
     font-family: 'Apercu-Medium';
 }
 
+.min-w-sm {
+    min-width: 150px;
+}
+
 .list {
     padding-left: 0;
     &__item {
