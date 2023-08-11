@@ -26,4 +26,9 @@
             gap: 20px;
         }
     }
+    &__content {
+        @include mq(sm) {
+            padding-inline: 15px;
+        }
+    }
 }

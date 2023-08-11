@@ -10,3 +10,8 @@
     }   
 }
 
+.container {
+    @include mq(sm) {
+        padding-inline: 20px;
+    }
+} 

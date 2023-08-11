@@ -95,6 +95,9 @@ a {
 .arrow-primary {
     position: relative;
     left: -20px;
+    @include mq(lg) {
+        left: 15px;
+    }
     &::before {
         content: '';
         position: relative;
@@ -104,6 +107,9 @@ a {
         background: url(../images/arrow-primary.svg) no-repeat center;
         background-size: contain;
         display: inline-block;
+        @include mq(lg) {
+            left: -10px;
+        }
     }
 }
 
@@ -117,10 +123,7 @@ br {
 //     font-size: 35px;
 
 // }
-.text-xsm  {
-    font-size: 16px;
-    line-height: 35px;
-}
+
 .line-h-sm {
     line-height: 26px;
 }
@@ -139,10 +142,17 @@ br {
     font-style: italic;
     font-family: 'Cabin', sans-serif;
     text-transform: uppercase;
+    @include mq(sm) {
+       font-size: 13px;
+       line-height: 20px;
+    }
 }
 
 .block-padding{
     padding-block: 160px 120px;
+    @include mq(lg) {
+        padding-block: 120px;
+     }
 }
 .block-padding-lg{
     padding-block: 160px 160px;
@@ -191,68 +201,6 @@ br {
         }
     }
 }
-// .font-s-70 {
-//     font-size: 70px;
-//     @include mq(lg){
-//         font-size: 32px;
-//         line-height: 45px;
-//     }
-// }
-// .font-s-75 {
-//     font-size: 75px;
-//     @include mq(md){
-//         font-size: 40px;
-//         line-height: 50px;
-//     }
-// }
-// .line-h-70 {
-//     line-height: 70px;
-//     @include mq(md){
-//         line-height: 50px;
-//     }
-// }
-// .font-zen {
-//     font-family: 'Zen Kaku Gothic Antique', sans-serif;
-// }
-// .font-bigcity {
-//     font-family: "bigcity-grotesque-pro", sans-serif;
-// }
-// .font-playfair {
-//     font-family: 'Playfair Display', serif;
-// }
-// .fw-medium {
-//     font-weight: 500;
-// }
-// .section__content {
-//     max-width: 710px;
-// }
-// .section__content-xl {
-//     max-width: 850px;
-// }
-// .section__content-sm {
-//     max-width: 515px;
-// }
-// .min-w-sm {
-//     min-width: 228px;
-//     @include mq(xl){
-//         min-width: 30%;
-//      }
-// }
-// .max-w-sm {
-//     @include mq(lg){
-//         max-width: 70%;
-//      }
-//     @include mq(sm){
-//         max-width: 234px;
-//      }
-// }
-
-// .link {
-//     &:hover,
-//     &:focus {
-//         text-decoration: underline;
-//     }
-// }
 
 
 
@@ -260,9 +208,15 @@ br {
 .about-us {
     border-radius: 32px;
     margin-top: -32px;
+    @include mq(sm) {
+        border-radius: 20px;
+    }
     &__content {
         max-width: 1072px;
         margin: 0 auto;
+        @include mq(sm) {
+            padding-inline: 15px;
+        }
     }
 }
 
@@ -285,6 +239,9 @@ br {
             }
             @include mq(xl) {
                 flex-basis: 100%;
+            }
+            @include mq(lg) {
+                flex-basis: 48%;
             }
         }
         .nav-link {
@@ -309,6 +266,12 @@ br {
                 min-width:auto;
                 min-height: auto;
             }
+            @include mq(lg) {
+                min-width:172px;
+                min-height: 172px;
+                font-size: 14px;
+                padding: 10px 5px;
+            }
             .nav-tabs-icon {
                 transition: transform .3s ease-in-out;
             }
@@ -329,19 +292,31 @@ br {
         height: 100%;
         padding: 106px 136px 145px 136px;
         @include mq(xl) {
-            padding: 60px 80px 60px 80px;
+            padding: 60px 80px;
+        }
+        @include mq(sm) {
+            padding: 48px 15px;
         }
     }
    &__img-container {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
+    @include mq(sm) {
+        max-width: 284px;
+    }
+    
     .services-img-2 {
         position: absolute;
         left: -128px;
         bottom: -192px;
         @include mq(xl) {
             left: -70px;
+        }
+        @include mq(sm) {
+            max-width: 115px;
+            left: -30px;
+            bottom: -140px;
         }
     }
     .services-img-3 {
@@ -350,6 +325,11 @@ br {
         top: -192px;
         @include mq(xl) {
             right: -70px;
+        }
+        @include mq(sm) {
+            max-width: 115px;
+            right: -30px;
+            top: -140px;
         }
     }
    }
@@ -362,6 +342,10 @@ br {
     }
     @include mq(xxl) {
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    }
+    @include mq(lg) {
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        gap: 9px;
     }
    }
    .service__card {
@@ -378,6 +362,10 @@ br {
     @include mq(xl) {
         min-height: 400px;
     }
+    @include mq(sm) {
+        min-height: 230px;
+        padding: 0 10px;
+    }
    }
 }
 
@@ -390,6 +378,12 @@ br {
         @include mq(xl) {
             padding: 70px;
         }
+        @include mq(md) {
+            padding: 52px 15px;
+        }
+        @include mq(sm) {
+            border-radius: 8px;
+        }
     }
     .case__slider-content {
         display: flex;
@@ -401,63 +395,20 @@ br {
             justify-content: center;
             gap: 20px;
         }
+        @include mq(md) {
+            justify-content: flex-start;
+            gap: 6px;
+        }
         & > * {
             flex: 0 0 150px;
-           
+            @include mq(md) {
+                max-width: 100px;
+            }
         }
     }
 }
 
-.footer{
-    border-radius: 32px 32px 0 0 ;
-
-    &-logo {
-        @include mq(xl) {
-            max-width: 400px;
-        }
-    }
-    &__content {
-        border-top: 1px solid rgba($color: $clr-white, $alpha: .5);
-        border-bottom: 1px solid rgba($color: $clr-white, $alpha: .5);
-        padding-block:45px 86px ;
-    }
-    p,a {
-        color: $clr-light;
-        font-size:17px;
-        font-weight: 400;
-    }
-    .link-hover {
-        display: block;
-
-    }
-    .copyright__content {
-        padding: 20px 0; 
-        p,a {
-            font-family: 'Hanken Grotesk', sans-serif;
-            font-style: italic;
-            font-size: 20px;
-        }
-    }
-    .back-to-top {
-        svg {
-            transition: transform .3s ease-in-out;
-        }
-        &:hover  {
-            svg {
-                transform: translateY(-5px);
-            }
-            g {
-                opacity: 1;
-            }
-        }
-    }
-    .link-hover::after  {
-        background-position: left !important;
-    }
-
-    address {
-        br {
-            display: block;
-        }
-    }
-}
+.icon { 
+    width: 18px; 
+    height: 8px;
+  }

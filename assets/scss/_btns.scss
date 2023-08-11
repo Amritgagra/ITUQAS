@@ -24,18 +24,15 @@
     border-image-source: url(../images/btn/btn-accent-bg.svg);
   
     svg {
-        transition: transform .3s ease-in-out;
-        g {
-            transition: opacity .3s ease-in-out;
-        }
+        opacity: .5;
+        transition: all .3s ease-in-out;
+        
     }
     &:hover,
     &:focus {
         color: $clr-light !important;
-        g {
-            opacity: 1;
-        }
         svg {
+            opacity: 1;
             transform: translateX(5px);
         }
     }
@@ -44,6 +41,11 @@
         border-image-source: url(../images/btn/btn-accent-top-bg.svg);
         min-height: 54px;
         min-width: 281px;
+        @include mq(sm) {
+            min-height: 46px;
+            min-width: 164px;
+            padding: 11px 20px;
+        }
     }
 
 }
@@ -53,19 +55,21 @@
     min-height: 54px;
     min-width: 239px;
     padding: 11px 36px;
+    @include mq(sm) {
+        min-height: 46px;
+        min-width: 164px;
+        padding: 11px 20px;
+    }
     svg {
-        transition: transform .3s ease-in-out;
-        g {
-            transition: opacity .3s ease-in-out;
-        }
+        opacity: .5;
+        transition: all .3s ease-in-out; 
     }
     &:hover,
     &:focus {
         color: $clr-dark !important;
-        g {
-            opacity: 1;
-        }
+        
         svg {
+            opacity: 1;
             transform: translateX(5px);
         }
     }

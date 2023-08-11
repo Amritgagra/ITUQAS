@@ -32,4 +32,9 @@
   .banner__heading {
     gap: 20px;
   }
+}
+@media screen and (max-width: 576px) {
+  .banner__content {
+    padding-inline: 15px;
+  }
 }/*# sourceMappingURL=banner.css.map */

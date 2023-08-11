@@ -10,15 +10,15 @@
       color: $clr-accent;
     }
    
- 
-
-
     .navbar-nav {
        width: 100%;
        .nav-item {
         padding-inline:50px;
         @include mq(xxl){
           padding-inline:20px;
+        }
+        @include mq(lg){
+          padding:0 0 20px;
         }
        }
      
@@ -31,6 +31,7 @@
         transition: color .5s ease-in-out;
         padding: 0;
         position: relative;
+       
        
 
         
@@ -48,41 +49,39 @@
  
     .navbar-toggler{
       border: 0;
+      &:focus {
+        box-shadow: none;
+      }
       }
 
      
     
 
      
-      // .offcanvas {
-      //   width: 100%;
-      //   background: rgba($color: $clr-primary, $alpha: .95);
-      //   padding: 45px 92px 80px 80px;
-      //   @include mq(lg){
-      //     padding:30px;
-      //   }
-      //   @include mq(sm){
-      //     padding:20px;
-      //   }
-      //   .btn-close {
-      //     background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
-      //     border: 0;
-      //     border-radius: 0;
-      //     opacity: 1;
-      //     width: 23px;
-      //     height: 23px;
-      //     &:focus {
-      //       box-shadow: none;
-      //     }
-      // }
-      // .offcanvas-body {
-      //   display: flex;
-      //   flex-direction: row-reverse;
-      //   align-items: flex-start;
-      //   justify-content: space-between;
-      //   padding: 0;
-      // }
-      // }
+      .offcanvas {
+        width: 100%;
+        background: rgba($color: $clr-dark, $alpha: 1);
+        @include mq(lg){
+          padding:30px;
+        }
+        @include mq(sm){
+          padding:20px;
+        }
+        .btn-close {
+          background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+          border: 0;
+          border-radius: 0;
+          opacity: 1;
+          width: 23px;
+          height: 23px;
+          &:focus {
+            box-shadow: none;
+          }
+      }
+      .offcanvas-body {
+       text-align:center;
+      }
+      }
 }
 
 

@@ -67,6 +67,10 @@ h2{
         font-size: 35px;
         line-height: 46px;
     }
+    @include mq(sm){
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 h3{
@@ -110,5 +114,10 @@ h4{
     @include mq(lg){
         font-size: 50px;
         line-height: 70px;
+    }
+    @include mq(sm){
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 0;
     }
 }
