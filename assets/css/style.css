@@ -455,6 +455,20 @@ a {
   min-width: 150px;
 }
 
+.min-h-md {
+  min-height: 626px !important;
+}
+
+.left-270 {
+  position: relative;
+  left: -270px;
+}
+@media screen and (max-width: 1800px) {
+  .left-270 {
+    left: -170px;
+  }
+}
+
 .list {
   padding-left: 0;
 }

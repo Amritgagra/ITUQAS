@@ -184,6 +184,18 @@ br {
     min-width: 150px;
 }
 
+.min-h-md {
+    min-height: 626px !important;
+}
+
+.left-270 {
+    position: relative;
+    left: -270px;
+    @include mq(xxxl) {
+        left: -170px;
+    }
+}
+
 .list {
     padding-left: 0;
     &__item {
