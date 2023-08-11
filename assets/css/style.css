@@ -468,6 +468,16 @@ a {
     left: -170px;
   }
 }
+@media screen and (max-width: 1400px) {
+  .left-270 {
+    left: -100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .left-270 {
+    left: -50px;
+  }
+}
 
 .list {
   padding-left: 0;

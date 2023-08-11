@@ -194,6 +194,12 @@ br {
     @include mq(xxxl) {
         left: -170px;
     }
+    @include mq(xxl) {
+        left: -100px;
+    }
+    @include mq(sm) {
+        left: -50px;
+    }
 }
 
 .list {
