@@ -1,13 +1,21 @@
 @import '../variables';
 @import '../mixins';
 .header{
-    padding-block: 4px;
- 
     .logo{
       font-size:35px;
       line-height: 43px;
       font-family: 'Apercu-Medium';
       color: $clr-accent;
+    }
+
+    .navbar.active {
+      transform: translateY(-100px);
+      transition: transform .3s ease-in-out;
+      padding-block: 12px;
+      @include mq(lg){
+        transform: initial !important;
+        padding-block: 8px;
+      }
     }
    
     .navbar-nav {
@@ -63,6 +71,7 @@
         background: rgba($color: $clr-dark, $alpha: 1);
         @include mq(lg){
           padding:30px;
+          min-height: 100vh;
         }
         @include mq(sm){
           padding:20px;
@@ -117,6 +126,14 @@
     .navbar-toggler {
       rect {
         fill: $clr-dark;
+      }
+    }
+  }
+  &:hover {
+    .navbar {
+      transform: translateY(0);
+      @include mq(lg){
+        transform: initial !important;
       }
     }
   }

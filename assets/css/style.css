@@ -7,6 +7,10 @@
   font-family: "Apercu-Medium";
   src: url(./font/Apercu-Medium.woff2) format("woff2");
 }
+@font-face {
+  font-family: "Apercu-Regular";
+  src: url(./font/Apercu-Regular.woff2) format("woff2");
+}
 html {
   scroll-behavior: smooth;
 }
@@ -214,6 +218,8 @@ h4 {
   opacity: 0.5;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  top: 2px;
 }
 .btn__primary:hover, .btn__primary:focus {
   color: #1F1E1E !important;
@@ -310,12 +316,30 @@ a {
   }
 }
 
+.mb-130 {
+  margin-bottom: 130px;
+}
+@media screen and (max-width: 992px) {
+  .mb-130 {
+    margin-bottom: 70px;
+  }
+}
+
 .mb-200 {
   margin-bottom: 200px;
 }
 @media screen and (max-width: 992px) {
   .mb-200 {
     margin-bottom: 100px;
+  }
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 992px) {
+  .mb-100 {
+    margin-bottom: 50px;
   }
 }
 
@@ -339,12 +363,20 @@ a {
   background: #1F1E1E;
 }
 
+.border-dark {
+  border: 1px solid #1F1E1E;
+}
+
 .text__light {
   color: #FBFFF9;
 }
 
 .text__primary {
   color: #200ADF;
+}
+
+.text__dark-light {
+  color: rgba(31, 30, 30, 0.9);
 }
 
 .arrow-primary {
@@ -433,6 +465,11 @@ a {
 .block-margin {
   margin-block: 160px 120px;
 }
+@media screen and (max-width: 992px) {
+  .block-margin {
+    margin-block: 100px;
+  }
+}
 
 .block-margin-xl {
   margin-block: 200px;
@@ -451,12 +488,28 @@ a {
   font-family: "Apercu-Medium";
 }
 
+.font-Apercu-Regular {
+  font-family: "Apercu-Regular";
+}
+
 .min-w-sm {
   min-width: 150px;
 }
 
 .min-h-md {
   min-height: 626px !important;
+}
+
+.max-w-lg {
+  max-width: 800px !important;
+}
+
+.max-w-xl {
+  max-width: 1100px !important;
+}
+
+.max-w-md {
+  max-width: 664px !important;
 }
 
 .left-270 {
@@ -476,6 +529,21 @@ a {
 @media screen and (max-width: 576px) {
   .left-270 {
     left: -50px;
+  }
+}
+
+.left-30 {
+  position: relative;
+  left: -30px;
+}
+@media screen and (max-width: 992px) {
+  .left-30 {
+    left: 150px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .left-30 {
+    left: 30px;
   }
 }
 
@@ -499,6 +567,10 @@ a {
   display: inline-block;
   position: relative;
   top: 10px;
+}
+.list-arrow .list__item::before {
+  content: "";
+  background: url(../images/list-arrow.svg) no-repeat center;
 }
 
 .about-us {
@@ -591,6 +663,11 @@ a {
     min-height: 172px;
     font-size: 14px;
     padding: 10px 5px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .services .nav-tabs .nav-link {
+    min-width: auto;
   }
 }
 .services .nav-tabs .nav-link .nav-tabs-icon {

@@ -20,7 +20,7 @@
 .footer__content {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  padding-block: 45px 86px;
+  padding-block: 45px 56px;
 }
 .footer p, .footer a {
   color: #FBFFF9;
@@ -42,6 +42,7 @@
   font-family: "Hanken Grotesk", sans-serif;
   font-style: italic;
   font-size: 20px;
+  font-weight: 500;
 }
 @media screen and (max-width: 768px) {
   .footer .copyright__content p, .footer .copyright__content a {

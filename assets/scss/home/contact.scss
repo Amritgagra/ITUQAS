@@ -121,5 +121,9 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px $clr-accent inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+
+p:not(.text-primary),a {
+    font-weight: 400;
+}
     
 }

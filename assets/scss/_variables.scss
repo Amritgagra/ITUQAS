@@ -4,4 +4,6 @@ $clr-primary:#200ADF;
 $clr-accent:#D3FF1A;
 $clr-light:#FBFFF9;
 $clr-dark:#1F1E1E;
+$clr-dark-light:rgba($color: $clr-dark, $alpha: .9);
 $clr-dark-300:#353434;
+

@@ -1,11 +1,24 @@
-.header {
-  padding-block: 4px;
-}
 .header .logo {
   font-size: 35px;
   line-height: 43px;
   font-family: "Apercu-Medium";
   color: #D3FF1A;
+}
+.header .navbar.active {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  padding-block: 12px;
+}
+@media screen and (max-width: 992px) {
+  .header .navbar.active {
+    -webkit-transform: initial !important;
+            transform: initial !important;
+    padding-block: 8px;
+  }
 }
 .header .navbar-nav {
   width: 100%;
@@ -57,6 +70,7 @@
 @media screen and (max-width: 992px) {
   .header .offcanvas {
     padding: 30px;
+    min-height: 100vh;
   }
 }
 @media screen and (max-width: 576px) {
@@ -121,6 +135,16 @@
 }
 .header.header-accent .navbar-toggler rect {
   fill: #1F1E1E;
+}
+.header:hover .navbar {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+@media screen and (max-width: 992px) {
+  .header:hover .navbar {
+    -webkit-transform: initial !important;
+            transform: initial !important;
+  }
 }
 
 .link-hover::after {
