@@ -82,6 +82,44 @@
        text-align:center;
       }
       }
+
+      &.header-accent {
+        background: $clr-accent;
+        border-radius: 32px 32px 0 0;
+        .logo{
+          color: $clr-dark;
+        }
+        .navbar-nav {       
+         .nav-link{
+           color: $clr-dark;
+           @include mq(lg) {
+            color: $clr-white;
+          }
+      }
+    }
+    .btn__accent {
+      display: none;
+      @include mq(lg) {
+        display: inline-flex;
+      }
+    }
+    .btn__accent-active {
+      display: inline-flex;
+      border-image-source: url(../images/btn__accent-active.svg);
+      color: $clr-dark;
+      @include mq(lg) {
+        display:none;
+      }
+      &:hover {
+        color: $clr-dark !important;
+      }
+    }
+    .navbar-toggler {
+      rect {
+        fill: $clr-dark;
+      }
+    }
+  }
 }
 
 
@@ -103,6 +141,16 @@
 }
 .link-hover-3::after {
   background: url(../images/header/nav-icon-case.svg) no-repeat center;
+}
+
+.link-hover-1.link-hover--primary::after {
+  background: url(../images/header/nav-link-about--primary.svg) no-repeat center;
+}
+.link-hover-2.link-hover--primary::after {
+  background: url(../images/header/nav-link-leistungen--primary.svg) no-repeat center;
+}
+.link-hover-3.link-hover--primary::after {
+  background: url(../images/header/nav-icon-case--primary.svg) no-repeat center;
 }
 
 .link-hover {

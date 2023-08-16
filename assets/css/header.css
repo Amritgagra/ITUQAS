@@ -79,6 +79,49 @@
 .header .offcanvas .offcanvas-body {
   text-align: center;
 }
+.header.header-accent {
+  background: #D3FF1A;
+  border-radius: 32px 32px 0 0;
+}
+.header.header-accent .logo {
+  color: #1F1E1E;
+}
+.header.header-accent .navbar-nav .nav-link {
+  color: #1F1E1E;
+}
+@media screen and (max-width: 992px) {
+  .header.header-accent .navbar-nav .nav-link {
+    color: #fff;
+  }
+}
+.header.header-accent .btn__accent {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .header.header-accent .btn__accent {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+.header.header-accent .btn__accent-active {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-image-source: url(../images/btn__accent-active.svg);
+  color: #1F1E1E;
+}
+@media screen and (max-width: 992px) {
+  .header.header-accent .btn__accent-active {
+    display: none;
+  }
+}
+.header.header-accent .btn__accent-active:hover {
+  color: #1F1E1E !important;
+}
+.header.header-accent .navbar-toggler rect {
+  fill: #1F1E1E;
+}
 
 .link-hover::after {
   content: "";
@@ -100,6 +143,18 @@
 
 .link-hover-3::after {
   background: url(../images/header/nav-icon-case.svg) no-repeat center;
+}
+
+.link-hover-1.link-hover--primary::after {
+  background: url(../images/header/nav-link-about--primary.svg) no-repeat center;
+}
+
+.link-hover-2.link-hover--primary::after {
+  background: url(../images/header/nav-link-leistungen--primary.svg) no-repeat center;
+}
+
+.link-hover-3.link-hover--primary::after {
+  background: url(../images/header/nav-icon-case--primary.svg) no-repeat center;
 }
 
 .link-hover:hover::after, .link-hover:focus::after {

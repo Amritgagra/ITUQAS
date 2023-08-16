@@ -3,6 +3,7 @@
 
 .footer{
     border-radius: 32px 32px 0 0 ;
+    margin-top: -32px;
     @include mq(sm) {
         border-radius:20px 20px 0 0;
     }
@@ -28,8 +29,7 @@
         }
     }
     .link-hover {
-        display: block;
-
+        display: block; 
     }
     .copyright__content {
         padding: 20px 0; 
