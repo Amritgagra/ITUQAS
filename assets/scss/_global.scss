@@ -291,6 +291,8 @@ br {
 
 // aboutus 
 .about-us {
+    position: relative;
+    z-index: 2;
     border-radius: 32px;
     margin-top: -32px;
     min-height: 1044px;

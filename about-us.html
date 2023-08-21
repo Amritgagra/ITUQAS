@@ -9,6 +9,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
     <!-- Bootstrap CSS v5.2.1 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -132,96 +133,92 @@
     </header>
     <main>
       <!-- banner section start -->
-      <section
-        class="banner block-padding-xl pt-0 overflow-hidden bg__dark"
-        id="top"
-      >
-        <div class="container min-h-inherit">
-          <div class="row min-h-inherit">
-            <div
-              class="col-12 d-flex align-items-center justify-content-center"
-            >
-              <div class="banner__content text-center">
-                <h1
-                  class="text-accent mb-0 d-flex align-items-center justify-content-center banner__heading"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
-                >
-                  MEHR
-                </h1>
+        <section
+          class="banner block-padding-xl  overflow-hidden bg__dark"
+          id="top"
+        >
+          <div class="container min-h-inherit">
+            <div class="panel">
+              <div class="row min-h-inherit">
                 <div
-                  class="d-flex align-items-center justify-content-xl-between justify-content-center"
-
+                  class="col-12 d-flex align-items-center justify-content-center"
                 >
-                  <h1
-                    class="text-accent mb-0 d-flex align-items-center justify-content-center banner__heading pe-lg-5 pe-4"  data-aos="fade-right"
-                    data-aos-duration="1000"
-                  >
-                    ÜBER
-                  </h1>
-                  <div
-                    class="text__light fst-italic text-start d-none d-xl-block ps-lg-5"
-                  >
-                    <p class="mb-0">
-                      Wir machen nicht viele Worte um uns. Das sind wir…
-                    </p>
-                    <p class="mb-0">
-                      zwei Typen, die ihre Neugierde bewahrt haben und es
-                      lieben,
-                    </p>
-                    <p class="mb-0">
-                      eigene Ideen zu entwickeln und sie bestmöglich umzusetzen.
-                    </p>
-                    <p class="text-end mb-0">
-                      <span class="pe-2">
-                        <img src="assets/images/banner/arrow.png" alt="" />
-                      </span>
-                      Das treibt uns an.
-                    </p>
+                  <div class="banner__content text-center">
+                    <h1
+                      class="text-accent mb-0 d-flex align-items-center justify-content-center banner__heading banner__heading--left1"
+                    >
+                      MEHR
+                    </h1>
+                    <div
+                      class="d-flex align-items-center justify-content-xl-between justify-content-center"
+                    >
+                      <h1
+                        class="text-accent mb-0 d-flex align-items-center justify-content-center banner__heading pe-lg-5 pe-4 banner__heading--right1"
+                      >
+                        ÜBER
+                      </h1>
+                      <div
+                        class="text__light fst-italic text-start d-none d-xl-block ps-lg-5"
+                      >
+                        <p class="mb-0">
+                          Wir machen nicht viele Worte um uns. Das sind wir…
+                        </p>
+                        <p class="mb-0">
+                          zwei Typen, die ihre Neugierde bewahrt haben und es
+                          lieben,
+                        </p>
+                        <p class="mb-0">
+                          eigene Ideen zu entwickeln und sie bestmöglich umzusetzen.
+                        </p>
+                        <p class="text-end mb-0">
+                          <span class="pe-2">
+                            <img src="assets/images/banner/arrow.png" alt="" />
+                          </span>
+                          Das treibt uns an.
+                        </p>
+                      </div>
+                    </div>
+                    <h1
+                      class="text-accent mb-50 banner__heading banner__heading--left1"
+                    >
+                      UNS
+                    </h1>
+                    <div
+                      class="text__light fst-italic text-start d-xl-none mb-5"
+                    >
+                      <p class="mb-0">
+                        Wir machen nicht viele Worte um uns. Das sind wir…
+                      </p>
+                      <p class="mb-0">
+                        zwei Typen, die ihre Neugierde bewahrt haben und es lieben,
+                      </p>
+                      <p class="mb-0"> eigene Ideen zu entwickeln und sie bestmöglich umzusetzen.</p>
+                      <p class="text-end mb-0">
+                        <span class="pe-2">
+                          <img src="assets/images/banner/arrow.png" alt="" />
+                        </span>
+                        Das treibt uns an.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <h1
-                  class="text-accent mb-50 banner__heading"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
-                >
-                  UNS
-                </h1>
-                <div
-                  class="text__light fst-italic text-start d-xl-none mb-5"
-                >
-                  <p class="mb-0">
-                    Wir machen nicht viele Worte um uns. Das sind wir…
-                  </p>
-                  <p class="mb-0">
-                    zwei Typen, die ihre Neugierde bewahrt haben und es lieben,
-                  </p>
-                  <p class="mb-0"> eigene Ideen zu entwickeln und sie bestmöglich umzusetzen.</p>
-                  <p class="text-end mb-0">
-                    <span class="pe-2">
-                      <img src="assets/images/banner/arrow.png" alt="" />
-                    </span>
-                    Das treibt uns an.
-                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <img
-                src="assets/images/about-us/about-us-banner-img.png"
-                alt=""
-                class="img-fluid"
-              />
+            <div class="row panel-banner-about" style="position: relative; z-index: 2;">
+              <div class="col-12">
+                <img
+                  src="assets/images/about-us/about-us-banner-img.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       <!-- banner section end -->
 
       <!-- about-us section start -->
-      <section class="about-us bg__accent  border-dark">
+      <section class="about-us bg__accent  border-dark ">
         <div class="container min-h-inherit">
           <div class="row min-h-inherit">
             <div class="col-12 d-flex align-items-center">
@@ -493,7 +490,7 @@
     </footer>
 
       <!-- svg sprite start -->
-  <svg width="0" height="0" class="hidden">
+  <svg width="0" height="0" class="hidden d-none">
     <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.957 7.638" id="arrow-right">
       <defs>
         <clipPath id="clip-path">
@@ -520,6 +517,10 @@
     </symbol>
   </svg>
 <!-- svg sprite end -->
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Bootstrap JavaScript Libraries -->

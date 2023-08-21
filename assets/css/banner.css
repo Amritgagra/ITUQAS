@@ -1,6 +1,5 @@
 .banner {
-  min-height: 870px;
-  padding-block: 100px 126px;
+  padding-block: 160px 126px;
 }
 @media screen and (max-width: 992px) {
   .banner {

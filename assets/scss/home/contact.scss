@@ -1,7 +1,8 @@
 @import '../variables';
 @import '../mixins';
 .contact{
-
+        padding-block: 192px 150px;
+        height: 100%;
     &__content{
         max-width: 623px;
         margin: 0 auto;
@@ -150,3 +151,8 @@ p:not(.text-primary),a {
 // 	// 	// todo - hook 
 // 	// 	}
 // 	}
+
+.panel {
+    width: 100%;
+    height: 100%;
+  }

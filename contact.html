@@ -9,6 +9,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
     <!-- Bootstrap CSS v5.2.1 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -28,7 +29,6 @@
   </head>
 
   <body class="bg__dark">
-    <div >
       <header class="header  fixed-top header-accent">
         <nav class="navbar navbar-light navbar-expand-lg bg__accent">
           <div class="container">
@@ -142,282 +142,284 @@
       </header>
       <main>
         <!-- contact section start -->
-        <section class="contact block-padding-xl bg__accent panel">
-          <div class="container">
-            <div class="row justify-content-between">
-              <div class="col-lg-5 mb-5 mb-lg-0"  data-aos="fade-up"
-              data-aos-duration="1000">
-                <h2 class="mb-70 font-Apercu-Regular text__dark-light">Sie haben Fragen?  <span class="d-block">Wir helfen Ihnen gerne</span></h2>
-      
-                <div class="d-flex gap-xxl-0 gap-5 ">
-                  <div class="col">
-                    <p class="text-primary fst-italic">Kontakt</p>
-                    <div class="d-flex flex-column ">
-                      <div class="col mb-30">
-                        <p class="mb-0">Dr. Julia Treichel</p>
-                        <a href="tel:+49 (0) 1522  283 2610" class="link d-block"
-                          >+49 (0) 1522 – 283 2610</a
-                        >
-                        <a href="mailto:julia.treichel@ituqas.com" class="link d-block"
-                          >julia.treichel@ituqas.com</a
-                        >
+        <div class="panel">
+          <section class="contact  bg__accent">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col-lg-5 mb-5 mb-lg-0"  data-aos="fade-up"
+                data-aos-duration="1000">
+                  <h2 class="mb-70 font-Apercu-Regular text__dark-light">Sie haben Fragen?  <span class="d-block">Wir helfen Ihnen gerne</span></h2>
+                  <div class="d-flex gap-xxl-0 gap-5 ">
+                    <div class="col">
+                      <p class="text-primary fst-italic">Kontakt</p>
+                      <div class="d-flex flex-column ">
+                        <div class="col mb-30">
+                          <p class="mb-0">Dr. Julia Treichel</p>
+                          <a href="tel:+49 (0) 1522  283 2610" class="link d-block"
+                            >+49 (0) 1522 – 283 2610</a
+                          >
+                          <a href="mailto:julia.treichel@ituqas.com" class="link d-block"
+                            >julia.treichel@ituqas.com</a
+                          >
+                        </div>
+                        <div class="col mb-30">
+                          <p class="mb-0">Peter Pieper</p>
+                          <a href="tel:+49 (0) 171  359 1377" class="link d-block"
+                            >+49 (0) 171 - 359 1377</a
+                          >
+                          <a href="mailto:julia.treichel@ituqas.com" class="link d-block"
+                            >peter.pieper@ituqas.com</a
+                          >
+                        </div>
+                        <address class="col">
+                          <p class="mb-0">
+                            Management Consulting <br />
+                            80337 München <br />
+                            Tumblingerstraße 14
+                          </p>
+                        </address>
                       </div>
-                      <div class="col mb-30">
-                        <p class="mb-0">Peter Pieper</p>
-                        <a href="tel:+49 (0) 171  359 1377" class="link d-block"
-                          >+49 (0) 171 - 359 1377</a
-                        >
-                        <a href="mailto:julia.treichel@ituqas.com" class="link d-block"
-                          >peter.pieper@ituqas.com</a
-                        >
+                    </div>
+                    <div class="col">
+                      <p class="text-primary fst-italic">Social Media</p>
+                      <div class="d-flex flex-column align-items-start">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Xing</a>
                       </div>
-                      <address class="col">
-                        <p class="mb-0">
-                          Management Consulting <br />
-                          80337 München <br />
-                          Tumblingerstraße 14
-                        </p>
-                      </address>
+                                    </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <p class="text-primary fst-italic">Social Media</p>
-                    <div class="d-flex flex-column align-items-start">
-                      <a href="#" class="social-link">LinkedIn</a>
-                      <a href="#" class="social-link">Xing</a>
+                </div>
+                <div class="col-lg-6">
+                  <form class="contact-form">
+                    <div
+                      class="mb-4 pt-lg-4 pt-3"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="100"
+                    >
+                      <label for="username" class="form-label">
+                        <span>01</span> Ihr Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        placeholder="Max Mustermann *"
+                      />
                     </div>
-                                  </div>
-                  </div>
-              </div>
-              <div class="col-lg-6">
-                <form class="contact-form">
-                  <div
-                    class="mb-4 pt-lg-4 pt-3"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                  >
-                    <label for="username" class="form-label">
-                      <span>01</span> Ihr Name</label
+                    <div
+                      class="mb-4"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="100"
                     >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="username"
-                      placeholder="Max Mustermann *"
-                    />
-                  </div>
-                  <div
-                    class="mb-4"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                  >
-                    <label for="email" class="form-label">
-                      <span>02</span> Ihr E-Mail</label
+                      <label for="email" class="form-label">
+                        <span>02</span> Ihr E-Mail</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="max@mustermann.de *"
+                      />
+                    </div>
+                    <div
+                      class="mb-4"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="100"
                     >
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="max@mustermann.de *"
-                    />
-                  </div>
-                  <div
-                    class="mb-4"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                  >
-                    <label for="telephone" class="form-label">
-                      <span>03</span> Ihre Telefonnummer</label
+                      <label for="telephone" class="form-label">
+                        <span>03</span> Ihre Telefonnummer</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="telephone"
+                        placeholder="123 456 789 01"
+                      />
+                    </div>
+                    <div
+                      class="mb-4"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="100"
                     >
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="telephone"
-                      placeholder="123 456 789 01"
-                    />
-                  </div>
-                  <div
-                    class="mb-4"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                  >
-                    <label for="textarea" class="form-label"
-                      ><span>04</span> Ihre Nachricht</label
+                      <label for="textarea" class="form-label"
+                        ><span>04</span> Ihre Nachricht</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="textarea"
+                        rows="4"
+                        placeholder="Hallo, ich habe eine Frage bezüglich... *"
+                      ></textarea>
+                    </div>
+                    <div
+                      class="mb-4 form-check ps-0 d-flex align-items-baseline gap-1"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="100"
                     >
-                    <textarea
-                      class="form-control"
-                      id="textarea"
-                      rows="4"
-                      placeholder="Hallo, ich habe eine Frage bezüglich... *"
-                    ></textarea>
-                  </div>
-                  <div
-                    class="mb-4 form-check ps-0 d-flex align-items-baseline gap-1"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                  >
-                    <input
-                      type="radio"
-                      class="form-radio"
-                      id="form-check"
-                    />
-                    <label class="form-check-label" for="form-check"
-                      >Ja, ich habe die Datenschutzerklärung gelesen und bin damit
-                      einverstanden.</label
+                      <input
+                        type="radio"
+                        class="form-radio"
+                        id="form-check"
+                      />
+                      <label class="form-check-label" for="form-check"
+                        >Ja, ich habe die Datenschutzerklärung gelesen und bin damit
+                        einverstanden.</label
+                      >
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn__primary"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                      data-aos-delay="100"
                     >
-                  </div>
-                  <button
-                    type="submit"
-                    class="btn btn__primary"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                  >
-                    Nachricht senden
-                    <svg class="icon">
-                      <use xlink:href="#arrow-right"></use></svg>
-                  </button>
-                </form>
+                      Nachricht senden
+                      <svg class="icon">
+                        <use xlink:href="#arrow-right"></use></svg>
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
         <!-- contact section end -->
       </main>
-      <footer class="footer bg__dark overflow-hidden panel">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 block-padding d-flex justify-content-end">
-              <img
-                src="assets/images/footer/footer-logo.svg"
-                alt=""
-                class="img-fluid footer-logo"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              />
-            </div>
-          </div>
-          <div class="row footer__content">
-            <div
-              class="col-lg-6 px-xxl-0"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <p class="text-accent fst-italic">Kontakt</p>
-              <div class="d-flex justify-content-between flex-wrap gap-2">
-                <div class="col">
-                  <p class="mb-0">Dr. Julia Treichel</p>
-                  <a href="tel:+49 (0) 1522  283 2610" class="link"
-                    >+49 (0) 1522 – 283 2610</a
-                  >
-                  <a href="mailto:julia.treichel@ituqas.com" class="link"
-                    >julia.treichel@ituqas.com</a
-                  >
-                </div>
-                <div class="col mb-30">
-                  <p class="mb-0">Peter Pieper</p>
-                  <a href="tel:+49 (0) 171  359 1377" class="link"
-                    >+49 (0) 171 - 359 1377</a
-                  >
-                  <a href="mailto:julia.treichel@ituqas.com" class="link"
-                    >peter.pieper@ituqas.com</a
-                  >
-                </div>
-                <address class="col mb-30">
-                  <p class="mb-0">
-                    Management Consulting <br />
-                    80337 München <br />
-                    Tumblingerstraße 14
-                  </p>
-                </address>
+      <div class="panel">
+        <footer class="footer bg__dark overflow-hidden mt-0 h-100">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 block-padding d-flex justify-content-end">
+                <img
+                  src="assets/images/footer/footer-logo.svg"
+                  alt=""
+                  class="img-fluid footer-logo"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                />
               </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-              <div class="row flex-column flex-sm-row">
-                <div class="col mb-30">
-                  <p class="text-accent fst-italic">Social Media</p>
-                  <div class="d-flex flex-column align-items-start">
-                    <a href="#" class="link-hover link-hover-1">LinkedIn</a>
-                    <a href="#" class="link-hover link-hover-2">Xing</a>
-                  </div>
-                </div>
-                <div class="col mb-30">
-                  <p class="text-accent fst-italic">Sitemap</p>
-                  <div class="d-flex flex-column align-items-start">
-                    <a href="#" class="link-hover link-hover-1">Über uns</a>
-                    <a href="#" class="link-hover link-hover-2">Cases</a>
-                    <a href="#" class="link-hover link-hover-3">Kontakt</a>
-                  </div>
-                </div>
-                <div class="col mb-30">
-                  <p class="text-accent fst-italic">Rechtliche Hinweise</p>
-                  <div class="d-flex flex-column align-items-start">
-                    <a href="#" class="link-hover link-hover-1">Impressum</a>
-                    <a href="#" class="link-hover link-hover-2">Datenschutz</a>
-                    <a href="#" class="link-hover link-hover-3"
-                      >Cookie Hinweise</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 px-xxl-0">
+            <div class="row footer__content">
               <div
-                class="copyright__content d-flex align-items-center justify-content-sm-between justify-content-center flex-column flex-sm-row text-center text-sm-start"
+                class="col-lg-6 px-xxl-0"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               >
-                <p class="mb-sm-0">
-                  Copyright 2023 ITUQAS GmbH
-                  <span class="d-inline-block mx-2">|</span>
-                  <span class="opacity-50 d-block d-sm-inline-block"
-                    >Website made by Trendmarke</span
-                  >
-                </p>
-                <a href="#top" class="d-block back-to-top"
-                  >zurück zum Anfang
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="22.191"
-                      height="26.064"
-                      viewBox="0 0 22.191 26.064"
+                <p class="text-accent fst-italic">Kontakt</p>
+                <div class="d-flex justify-content-between flex-wrap gap-2">
+                  <div class="col">
+                    <p class="mb-0">Dr. Julia Treichel</p>
+                    <a href="tel:+49 (0) 1522  283 2610" class="link"
+                      >+49 (0) 1522 – 283 2610</a
                     >
-                      <defs>
-                        <clipPath id="a">
-                          <rect width="24.555" height="10.205" fill="#d3ff1a" />
-                        </clipPath>
-                      </defs>
-                      <g
-                        transform="translate(0 20.357) rotate(-56)"
-                        opacity="0.5"
+                    <a href="mailto:julia.treichel@ituqas.com" class="link"
+                      >julia.treichel@ituqas.com</a
+                    >
+                  </div>
+                  <div class="col mb-30">
+                    <p class="mb-0">Peter Pieper</p>
+                    <a href="tel:+49 (0) 171  359 1377" class="link"
+                      >+49 (0) 171 - 359 1377</a
+                    >
+                    <a href="mailto:julia.treichel@ituqas.com" class="link"
+                      >peter.pieper@ituqas.com</a
+                    >
+                  </div>
+                  <address class="col mb-30">
+                    <p class="mb-0">
+                      Management Consulting <br />
+                      80337 München <br />
+                      Tumblingerstraße 14
+                    </p>
+                  </address>
+                </div>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                <div class="row flex-column flex-sm-row">
+                  <div class="col mb-30">
+                    <p class="text-accent fst-italic">Social Media</p>
+                    <div class="d-flex flex-column align-items-start">
+                      <a href="#" class="link-hover link-hover-1">LinkedIn</a>
+                      <a href="#" class="link-hover link-hover-2">Xing</a>
+                    </div>
+                  </div>
+                  <div class="col mb-30">
+                    <p class="text-accent fst-italic">Sitemap</p>
+                    <div class="d-flex flex-column align-items-start">
+                      <a href="#" class="link-hover link-hover-1">Über uns</a>
+                      <a href="#" class="link-hover link-hover-2">Cases</a>
+                      <a href="#" class="link-hover link-hover-3">Kontakt</a>
+                    </div>
+                  </div>
+                  <div class="col mb-30">
+                    <p class="text-accent fst-italic">Rechtliche Hinweise</p>
+                    <div class="d-flex flex-column align-items-start">
+                      <a href="#" class="link-hover link-hover-1">Impressum</a>
+                      <a href="#" class="link-hover link-hover-2">Datenschutz</a>
+                      <a href="#" class="link-hover link-hover-3"
+                        >Cookie Hinweise</a
                       >
-                        <g clip-path="url(#a)">
-                          <path
-                            d="M24.175.221A1.76,1.76,0,0,0,23.031,0H20.189A.8.8,0,0,0,19.395.8a.808.808,0,0,0,.795.795h.794a25.047,25.047,0,0,1-10.5,3.19c-.639.045-1.28.06-1.92.057.62-.842,1.081-1.88.186-2.683a2.91,2.91,0,0,0-1.884-.468,8.076,8.076,0,0,0-2.385.259c-1.22.344-2.367,1.483-1.872,2.843.359.984,1.4,1.264,2.39,1.4A14.734,14.734,0,0,1,.547,8.626c-.963.327-.55,1.863.422,1.533A16.5,16.5,0,0,0,7.18,6.388a26.565,26.565,0,0,0,7.637-.674,26.441,26.441,0,0,0,7.754-3.2l-.337,1.262a.795.795,0,1,0,1.532.423l.492-1.844c.183-.683.607-1.6-.083-2.135M4.09,4.239c-.378-.862,2.184-.967,2.532-.967a6.058,6.058,0,0,1,.832.041,1.014,1.014,0,0,1,.159.05.4.4,0,0,1-.03.1,8.129,8.129,0,0,1-.941,1.2c-.029.031-.06.06-.09.091-.373-.031-.746-.067-1.117-.118-.3-.04-1.2-.06-1.345-.4"
-                            transform="translate(0 0)"
-                            fill="#d3ff1a"
-                          />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 px-xxl-0">
+                <div
+                  class="copyright__content d-flex align-items-center justify-content-sm-between justify-content-center flex-column flex-sm-row text-center text-sm-start"
+                >
+                  <p class="mb-sm-0">
+                    Copyright 2023 ITUQAS GmbH
+                    <span class="d-inline-block mx-2">|</span>
+                    <span class="opacity-50 d-block d-sm-inline-block"
+                      >Website made by Trendmarke</span
+                    >
+                  </p>
+                  <a href="#top" class="d-block back-to-top"
+                    >zurück zum Anfang
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="22.191"
+                        height="26.064"
+                        viewBox="0 0 22.191 26.064"
+                      >
+                        <defs>
+                          <clipPath id="a">
+                            <rect width="24.555" height="10.205" fill="#d3ff1a" />
+                          </clipPath>
+                        </defs>
+                        <g
+                          transform="translate(0 20.357) rotate(-56)"
+                          opacity="0.5"
+                        >
+                          <g clip-path="url(#a)">
+                            <path
+                              d="M24.175.221A1.76,1.76,0,0,0,23.031,0H20.189A.8.8,0,0,0,19.395.8a.808.808,0,0,0,.795.795h.794a25.047,25.047,0,0,1-10.5,3.19c-.639.045-1.28.06-1.92.057.62-.842,1.081-1.88.186-2.683a2.91,2.91,0,0,0-1.884-.468,8.076,8.076,0,0,0-2.385.259c-1.22.344-2.367,1.483-1.872,2.843.359.984,1.4,1.264,2.39,1.4A14.734,14.734,0,0,1,.547,8.626c-.963.327-.55,1.863.422,1.533A16.5,16.5,0,0,0,7.18,6.388a26.565,26.565,0,0,0,7.637-.674,26.441,26.441,0,0,0,7.754-3.2l-.337,1.262a.795.795,0,1,0,1.532.423l.492-1.844c.183-.683.607-1.6-.083-2.135M4.09,4.239c-.378-.862,2.184-.967,2.532-.967a6.058,6.058,0,0,1,.832.041,1.014,1.014,0,0,1,.159.05.4.4,0,0,1-.03.1,8.129,8.129,0,0,1-.941,1.2c-.029.031-.06.06-.09.091-.373-.031-.746-.067-1.117-.118-.3-.04-1.2-.06-1.345-.4"
+                              transform="translate(0 0)"
+                              fill="#d3ff1a"
+                            />
+                          </g>
                         </g>
-                      </g>
-                    </svg> </span
-                ></a>
+                      </svg> </span
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
    
 
       <!-- svg sprite start -->
-  <svg width="0" height="0" class="hidden">
+  <svg width="0" height="0" class="hidden d-none">
     <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.957 7.638" id="arrow-right">
       <defs>
         <clipPath id="clip-path">
@@ -445,10 +447,8 @@
   </svg>
 <!-- svg sprite end -->
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
-<!-- <script src="assets/js/splitText.js"></script> -->
-<script src="assets/js/scollsmooth.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Bootstrap JavaScript Libraries -->

@@ -596,6 +596,8 @@ a {
 }
 
 .about-us {
+  position: relative;
+  z-index: 2;
   border-radius: 32px;
   margin-top: -32px;
   min-height: 1044px;
@@ -901,4 +903,9 @@ a {
   .container {
     padding-inline: 20px;
   }
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
