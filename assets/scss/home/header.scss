@@ -1,6 +1,7 @@
 @import '../variables';
 @import '../mixins';
 .header{
+  
     .logo{
       font-size:35px;
       line-height: 43px;
@@ -8,10 +9,16 @@
       color: $clr-accent;
     }
 
+    .navbar {
+      padding-block: 24px 16px;
+      @include mq(lg){
+        padding-block: 8px;
+      }
+    }
+
     .navbar.active {
       transform: translateY(-100px);
       transition: transform .3s ease-in-out;
-      padding-block: 12px;
       @include mq(lg){
         transform: initial !important;
         padding-block: 8px;
@@ -40,9 +47,6 @@
         padding: 0;
         position: relative;
        
-       
-
-        
         &:hover,&:focus{
           color: $clr-white;
         }
@@ -93,7 +97,6 @@
       }
 
       &.header-accent {
-        background: $clr-accent;
         border-radius: 32px 32px 0 0;
         .logo{
           color: $clr-dark;

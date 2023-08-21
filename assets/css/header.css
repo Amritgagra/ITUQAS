@@ -4,6 +4,14 @@
   font-family: "Apercu-Medium";
   color: #D3FF1A;
 }
+.header .navbar {
+  padding-block: 24px 16px;
+}
+@media screen and (max-width: 992px) {
+  .header .navbar {
+    padding-block: 8px;
+  }
+}
 .header .navbar.active {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
@@ -11,7 +19,6 @@
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  padding-block: 12px;
 }
 @media screen and (max-width: 992px) {
   .header .navbar.active {
@@ -94,7 +101,6 @@
   text-align: center;
 }
 .header.header-accent {
-  background: #D3FF1A;
   border-radius: 32px 32px 0 0;
 }
 .header.header-accent .logo {

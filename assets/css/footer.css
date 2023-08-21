@@ -22,13 +22,13 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding-block: 45px 56px;
 }
-.footer p, .footer a {
+.footer p:not(.text-accent), .footer a {
   color: #FBFFF9;
   font-size: 17px;
   font-weight: 400;
 }
 @media screen and (max-width: 768px) {
-  .footer p, .footer a {
+  .footer p:not(.text-accent), .footer a {
     font-size: 13px;
   }
 }
@@ -48,6 +48,9 @@
   .footer .copyright__content p, .footer .copyright__content a {
     font-size: 16px;
   }
+}
+.footer .copyright__content p {
+  font-weight: 400;
 }
 .footer .back-to-top svg {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;

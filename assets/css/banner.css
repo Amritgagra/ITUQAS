@@ -1,5 +1,6 @@
 .banner {
-  min-height: 945px;
+  min-height: 870px;
+  padding-block: 100px 126px;
 }
 @media screen and (max-width: 992px) {
   .banner {
@@ -26,7 +27,7 @@
   border-radius: 15px;
 }
 .banner__heading {
-  gap: 80px;
+  gap: 65px;
 }
 @media screen and (max-width: 992px) {
   .banner__heading {
