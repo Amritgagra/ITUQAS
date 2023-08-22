@@ -1,7 +1,7 @@
 @import '../variables';
 @import '../mixins';
 .contact{
-        padding-block: 192px 150px;
+        min-height: 100vh;
         height: 100%;
     &__content{
         max-width: 623px;
@@ -125,6 +125,7 @@ select:-webkit-autofill:focus {
 
 p:not(.text-primary),a {
     font-weight: 400;
+    font-size: 17px;
 }
     
 }

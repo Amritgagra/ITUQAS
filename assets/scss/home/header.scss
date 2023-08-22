@@ -10,7 +10,7 @@
     }
 
     .navbar {
-      padding-block: 24px 16px;
+      padding-block: 16px;
       @include mq(lg){
         padding-block: 8px;
       }
@@ -94,9 +94,15 @@
       }
 
       &.header-accent {
-        border-radius: 32px 32px 0 0;
+        
         .logo{
           color: $clr-dark;
+        }
+        .navbar {
+          border-radius: 32px 32px 0 0;
+          &.active {
+            transform: translateY(0px);
+          }
         }
         .navbar-nav {       
          .nav-link{
@@ -137,16 +143,20 @@
       }
     }
   }
+  .link-hover::after {
+    bottom: -8px;
+  }
 }
 
 
 .link-hover::after {
   content: '';
   display: block;
-  // position: relative;
-  // top: 5px;
+  position: absolute;
+  bottom: 0px;
   background-size: contain;
   min-height: 5px;
+  width: 100%;
   opacity: 0;
   transition: opacity .3s ease-in-out;
 }
@@ -171,6 +181,7 @@
 }
 
 .link-hover {
+  position: relative;
   &:hover::after,&:focus::after{
     opacity: 1;
   }

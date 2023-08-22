@@ -296,6 +296,10 @@ br {
     border-radius: 32px;
     margin-top: -32px;
     min-height: 1044px;
+
+    &-banner {
+        min-height: calc(100vh - 93px);
+    }
     @include mq(lg) {
         min-height: auto;
     }
@@ -404,6 +408,14 @@ br {
         position: absolute;
         left: -128px;
         bottom: -192px;
+
+        p {
+            position: relative;
+            bottom: 40px;
+            right: 20px;
+            text-align: right;
+            text-transform: capitalize;
+        }
         @include mq(xl) {
             left: -70px;
         }
@@ -417,6 +429,13 @@ br {
         position: absolute;
         right: -128px;
         top: -192px;
+        p {
+            position: relative;
+            bottom: 40px;
+            right: 20px;
+            text-align: right;
+            text-transform: capitalize;
+        }
         @include mq(xl) {
             right: -70px;
         }
@@ -500,9 +519,114 @@ br {
             }
         }
     }
+
+    .marquee {
+        display: flex;
+        overflow: hidden;
+        user-select: none;
+        gap: var(--gap);
+        mask-image: linear-gradient(
+          var(--mask-direction, to right),
+          hsl(0 0% 0% / 0),
+          hsl(0 0% 0% / 1) 20%,
+          hsl(0 0% 0% / 1) 80%,
+          hsl(0 0% 0% / 0)
+        );
+      }
+      
+      .marquee__group {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: var(--gap);
+        min-width: 100%;
+        animation: scroll-x var(--duration) linear infinite;
+      }
+      
+      @media (prefers-reduced-motion: reduce) {
+        .marquee__group {
+          animation-play-state: paused;
+        }
+      }
+      
+      
+      .marquee--reverse .marquee__group {
+        animation-direction: reverse;
+        animation-delay: -3s;
+      }
+      
+      @keyframes scroll-x {
+        from {
+          transform: translateX(var(--scroll-start));
+        }
+        to {
+          transform: translateX(var(--scroll-end));
+        }
+      }
+      
+      /* Element styles */
+      .marquee img {
+        display: grid;
+        place-items: center;
+        aspect-ratio: 16/9;
+      }
+          
+      /* Parent wrapper */
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+        margin: auto;
+        max-width: 100vw;
+      }
+        
+      
+      @keyframes fade {
+        to {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+      
+}
+
+@keyframes fadeinright {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .icon { 
     width: 18px; 
     height: 8px;
+  }
+
+  .tab-content {
+    overflow: hidden;
+  }
+  .tab-pane.active {
+    p.text__primary {
+        animation: fadeinright .5s linear;
+    }
+    p:not(.text__primary) {
+        animation: fadein 1s linear;
+    }
   }

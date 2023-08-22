@@ -6,4 +6,10 @@ $clr-light:#FBFFF9;
 $clr-dark:#1F1E1E;
 $clr-dark-light:rgba($color: $clr-dark, $alpha: .9);
 $clr-dark-300:#353434;
-
+:root {
+    --size: clamp(10rem, 1rem + 40vmin, 30rem);
+    --gap: calc(var(--size) / 14);
+    --duration: 30s;
+    --scroll-start: 0;
+    --scroll-end: calc(-100% - var(--gap));
+  }

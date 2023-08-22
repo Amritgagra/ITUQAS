@@ -1,8 +1,8 @@
 @import '../variables';
 @import '../mixins';
 .banner{
-    // min-height: 870px;
-    padding-block: 160px 126px;
+    min-height: 100vh;
+    // padding-block: 160px 126px;
     @include mq(lg) {
         min-height: 80vh;
     }

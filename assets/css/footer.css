@@ -1,5 +1,15 @@
+:root {
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 30s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+
 .footer {
   border-radius: 32px 32px 0 0;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 576px) {
   .footer {
