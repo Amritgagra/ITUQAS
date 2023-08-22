@@ -1,0 +1,42 @@
+:root {
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 30s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+
+.about-us {
+  position: relative;
+  z-index: 2;
+  border-radius: 32px;
+  margin-top: -32px;
+  min-height: 1044px;
+}
+.about-us-banner {
+  min-height: calc(100vh - 93px);
+}
+@media screen and (max-width: 992px) {
+  .about-us-banner {
+    min-height: calc(80vh - 93px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us {
+    min-height: 852px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-us {
+    border-radius: 20px;
+  }
+}
+.about-us__content {
+  max-width: 1072px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 576px) {
+  .about-us__content {
+    padding-inline: 15px;
+  }
+}/*# sourceMappingURL=about.css.map */

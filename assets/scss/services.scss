@@ -1,0 +1,167 @@
+@import './variables';
+@import './mixins';
+.services {
+    sup {
+        top: -1.2em;
+        left: .2em;
+    }
+
+    .nav-tabs {
+        gap: 16px;
+        height: 100%;
+        @include mq(xxxl) {
+            gap: 8px;
+        }
+        .nav-item {
+            @include mq(xxxl) {
+                flex-basis: 48%;
+            }
+            @include mq(xl) {
+                flex-basis: 100%;
+            }
+            @include mq(lg) {
+                flex-basis: 48%;
+            }
+        }
+        .nav-link {
+            color: $clr-dark;
+            font-size: 20px;
+            font-weight: 500;
+            font-style: italic;
+            font-family: 'Hanken Grotesk', sans-serif;
+            border: 1px solid $clr-dark;
+            border-radius: 15px;
+            min-width:256px;
+            min-height: 256px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: $clr-light;
+            @include mq(xxxl) {
+                min-width:auto;
+                min-height: auto;
+            }
+            @include mq(lg) {
+                min-width:172px;
+                min-height: 172px;
+                font-size: 14px;
+                padding: 10px 5px;
+            }
+            @include mq(375px) {
+                min-width:auto;
+            }
+            .nav-tabs-icon {
+                transition: transform .3s ease-in-out;
+            }
+            &:hover,
+            &:focus,
+            &.active {
+                background-color: $clr-accent;
+                .nav-tabs-icon {
+                    transform: rotate(-10deg);
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        border: 1px solid $clr-dark;
+        border-radius: 15px;
+        height: 100%;
+        padding: 106px 136px 145px 136px;
+        @include mq(xl) {
+            padding: 60px 80px;
+        }
+        @include mq(sm) {
+            padding: 48px 15px;
+        }
+    }
+   &__img-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    @include mq(sm) {
+        max-width: 284px;
+    }
+    
+    .services-img-2 {
+        position: absolute;
+        left: -128px;
+        bottom: -192px;
+
+        p {
+            position: relative;
+            bottom: 40px;
+            right: 20px;
+            text-align: right;
+            text-transform: capitalize;
+        }
+        @include mq(xl) {
+            left: -70px;
+        }
+        @include mq(sm) {
+            max-width: 115px;
+            left: -30px;
+            bottom: -140px;
+        }
+    }
+    .services-img-3 {
+        position: absolute;
+        right: -128px;
+        top: -192px;
+        p {
+            position: relative;
+            bottom: 40px;
+            right: 20px;
+            text-align: right;
+            text-transform: capitalize;
+        }
+        @include mq(xl) {
+            right: -70px;
+        }
+        @include mq(sm) {
+            max-width: 115px;
+            right: -30px;
+            top: -140px;
+        }
+    }
+   }
+   .services__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(256px,1fr));
+    gap: 16px;
+    @include mq(xxxl) {
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+    @include mq(xxl) {
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    }
+    @include mq(lg) {
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        gap: 9px;
+    }
+   }
+   .service__card {
+    min-height: 700px;
+    border: 1px solid $clr-dark;
+    background: $clr-accent;
+    border-radius: 15px;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    @include mq(xl) {
+        min-height: 400px;
+    }
+    @include mq(sm) {
+        min-height: 230px;
+        padding: 0 10px;
+    }
+   }
+}

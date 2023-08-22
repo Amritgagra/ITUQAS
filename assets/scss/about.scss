@@ -1,0 +1,29 @@
+@import './variables';
+@import './mixins';
+.about-us {
+    position: relative;
+    z-index: 2;
+    border-radius: 32px;
+    margin-top: -32px;
+    min-height: 1044px;
+
+    &-banner {
+        min-height: calc(100vh - 93px);
+        @include mq(lg) {
+            min-height: calc(80vh - 93px);
+        }
+    }
+    @include mq(md) {
+        min-height: 852px;
+    }
+    @include mq(sm) {
+        border-radius: 20px;
+    }
+    &__content {
+        max-width: 1072px;
+        margin: 0 auto;
+        @include mq(sm) {
+            padding-inline: 15px;
+        }
+    }
+}
