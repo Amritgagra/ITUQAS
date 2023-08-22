@@ -42,7 +42,7 @@
         min-height: 54px;
         min-width: 281px;
         @include mq(sm) {
-            min-height: 46px;
+            // min-height: auto;
             min-width: 164px;
             padding: 11px 20px;
         }
@@ -56,7 +56,7 @@
     min-width: 239px;
     padding: 11px 36px;
     @include mq(sm) {
-        min-height: 46px;
+        // min-height: 50px;
         min-width: 164px;
         padding: 11px 20px;
     }

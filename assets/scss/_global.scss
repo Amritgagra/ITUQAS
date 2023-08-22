@@ -239,7 +239,7 @@ br {
         left: 150px;  
     }
     @include mq(sm) {
-        left: 30px;  
+        left: 40px;  
     }
 }
 .social-link {
@@ -299,9 +299,12 @@ br {
 
     &-banner {
         min-height: calc(100vh - 93px);
+        @include mq(lg) {
+            min-height: calc(80vh - 93px);
+        }
     }
-    @include mq(lg) {
-        min-height: auto;
+    @include mq(md) {
+        min-height: 852px;
     }
     @include mq(sm) {
         border-radius: 20px;

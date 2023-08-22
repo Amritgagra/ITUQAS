@@ -145,7 +145,7 @@
                   >
                     <div class="banner__content text-center">
                       <h1
-                        class="text-accent mb-0 d-flex align-items-center justify-content-center banner__heading banner__heading--left1"
+                        class="text-accent mb-0 mt-lg-4 d-flex align-items-center justify-content-center banner__heading banner__heading--left1"
                       >
                         MEHR
                       </h1>
@@ -179,7 +179,7 @@
                         </div>
                       </div>
                       <h1
-                        class="text-accent banner__heading banner__heading--left1"
+                        class="text-accent mb-0 banner__heading banner__heading--left1"
                       >
                         UNS
                       </h1>
@@ -212,11 +212,16 @@
         <div class="container">
           <div class="row panel-banner-about" style="position: relative; z-index: 2;">
             <div class="col-12">
-              <img
+              <!-- <img
                 src="assets/images/about-us/about-us-banner-img.png"
                 alt=""
                 class="img-fluid"
-              />
+              /> -->
+              <picture>
+                <source media="(min-width: 768px)" srcset="assets/images/about-us/about-us-banner-img.png">
+                <source media="(max-width: 465px)" srcset="assets/images/about-us/about-us-banner-img--mobile.png">
+                <img src="assets/images/about-us/about-us-banner-img.png" class="img-fluid">
+              </picture>
             </div>
           </div>
         </div>
@@ -454,7 +459,7 @@
               class="copyright__content d-flex align-items-center justify-content-sm-between justify-content-center flex-column flex-sm-row text-center text-sm-start"
             >
               <p class="mb-sm-0">
-                Copyright 2023 ITUQAS GmbH <span class="px-2">I</span>
+                Copyright 2023 ITUQAS GmbH <span class="px-2 d-none d-sm-block">I</span>
                 <span class="opacity-50 d-block d-sm-inline-block"
                   >Website made by Trendmarke</span
                 >

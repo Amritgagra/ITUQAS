@@ -4,7 +4,7 @@
     min-height: 100vh;
     // padding-block: 160px 126px;
     @include mq(lg) {
-        min-height: 80vh;
+        min-height: 90vh;
     }
     &__heading-img {
         border-radius: 74px;
@@ -27,9 +27,9 @@
             gap: 20px;
         }
     }
-    &__content {
-        @include mq(sm) {
-            padding-inline: 15px;
-        }
-    }
+    // &__content {
+    //     @include mq(sm) {
+    //         padding-inline: 15px;
+    //     }
+    // }
 }

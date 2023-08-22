@@ -114,6 +114,11 @@
 .header.header-accent .navbar {
   border-radius: 32px 32px 0 0;
 }
+@media screen and (max-width: 992px) {
+  .header.header-accent .navbar {
+    border-radius: 20px 20px 0 0;
+  }
+}
 .header.header-accent .navbar.active {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);

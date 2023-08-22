@@ -11,7 +11,7 @@
 }
 @media screen and (max-width: 992px) {
   .banner {
-    min-height: 80vh;
+    min-height: 90vh;
   }
 }
 .banner__heading-img {
@@ -39,10 +39,5 @@
 @media screen and (max-width: 992px) {
   .banner__heading {
     gap: 20px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .banner__content {
-    padding-inline: 15px;
   }
 }/*# sourceMappingURL=banner.css.map */
