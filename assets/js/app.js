@@ -38,16 +38,16 @@ panels.forEach((panel, i) => {
 let home1 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel--about',
-        start:'top center',
-        end:'bottom end',
+        start:'top 800px',
+        end:'bottom =+300px',
         scrub:1,
     }
 });
 let home2 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel--about',
-        start:'top center',
-        end:'bottom end',
+        start:'top 800px',
+        end:'bottom =+300px',
         scrub:1,
     }
 });
@@ -68,8 +68,8 @@ home2.to('.banner__heading--left',{
 let about1 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-about',
-        start:'top center',
-        end:'bottom center',
+        start:'top 800px',
+        end:'bottom =+300px',
         scrub:1,
     }
 });
@@ -77,8 +77,8 @@ let about1 = gsap.timeline({
 let about2 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-about',
-        start:'top center',
-        end:'bottom center',
+        start:'top 800px',
+        end:'bottom =+300px',
         scrub:1,
     }
 });
@@ -99,8 +99,8 @@ about2.to('.banner__heading--left1',{
 let services1 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-services',
-        start:'top center',
-        end:'bottom center',
+        start:'top 550px',
+        end:'bottom =+300px',
         scrub:1,
     }
 });
@@ -108,8 +108,8 @@ let services1 = gsap.timeline({
 let services2 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-services',
-        start:'top center',
-        end:'bottom center',
+        start:'top 550px',
+        end:'bottom =+300px',
         scrub:1,
     }
 });
@@ -129,8 +129,8 @@ services2.to('.banner__heading--left2',{
 let case1 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-case',
-        start:'top center',
-        end:'bottom center',
+        start:'top 550px',
+        end:'bottom =+300px',
         scrub:1,
     }
 });
@@ -138,8 +138,8 @@ let case1 = gsap.timeline({
 let case2 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-case',
-        start:'top center',
-        end:'bottom center',
+        start:'top 550px',
+        end:'bottom =+300px',
         scrub:1,
     }
 });
