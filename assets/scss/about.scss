@@ -8,7 +8,7 @@
     min-height: 1044px;
 
     &-banner {
-        min-height: calc(100vh - 93px);
+        min-height: calc(100vh - 103px);
         @include mq(lg) {
             min-height: calc(80vh - 93px);
         }
