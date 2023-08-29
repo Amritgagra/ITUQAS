@@ -108,6 +108,10 @@
             left: -30px;
             bottom: -140px;
         }
+        @include mq(374px) {
+            left: -12px;
+            bottom: -110px;
+        }
     }
     .services-img-3 {
         position: absolute;
@@ -128,6 +132,10 @@
             right: -30px;
             top: -140px;
         }
+        @include mq(374px) {
+            right: -12px;
+            top: -110px;
+        }
     }
    }
    .services__cards {
@@ -142,6 +150,10 @@
     }
     @include mq(lg) {
         grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        gap: 9px;
+    }
+    @include mq(374px) {
+        grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
         gap: 9px;
     }
    }
@@ -160,6 +172,10 @@
         min-height: 400px;
     }
     @include mq(sm) {
+        min-height: 230px;
+        padding: 0 10px;
+    }
+    @include mq(375px) {
         min-height: 230px;
         padding: 0 10px;
     }
@@ -187,6 +203,9 @@
     transform: translateX(300px);
     opacity: 0;
     transition: transform 1.5s ease-in-out , opacity 1.5s ease-in-out ;
+    @include mq(sm) {
+        transform: translateX(150px);
+    }
 }
 .tab-content .tab-pane:not(.active) p:not(.text__primary) {
     opacity: 0;
