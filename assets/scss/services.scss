@@ -164,4 +164,31 @@
         padding: 0 10px;
     }
    }
+
+    .nav-tabs {
+        @include mq(lg) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+.tab-content>.active {
+    display: none !important;
+}
+.tab-content>.show {
+    display: block !important;
+}
+
+.fade {
+    transition: opacity .5s ease-in-out .2s;
+}
+
+.tab-content .tab-pane:not(.active) p.text__primary {
+    transform: translateX(300px);
+    opacity: 0;
+    transition: transform 1.5s ease-in-out , opacity 1.5s ease-in-out ;
+}
+.tab-content .tab-pane:not(.active) p:not(.text__primary) {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }

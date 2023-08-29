@@ -20,7 +20,32 @@ let target = document.querySelector(".services__cards-wrapper");
 })();
 gsap.registerPlugin(ScrollTrigger);
 
-let panels = gsap.utils.toArray(".panel");
+
+
+
+
+
+let mm = gsap.matchMedia(),
+    breakPoint = 576;
+
+mm.add({
+
+  // set up any number of arbitrarily-named conditions. The function below will be called when ANY of them match.
+  isDesktop: `(min-width: ${breakPoint}px)`,
+  isMobile: `(max-width: ${breakPoint - 1}px)`,
+  reduceMotion: "(prefers-reduced-motion: reduce)"
+
+}, (context) => {
+
+  // context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
+  let { isDesktop, isMobile, reduceMotion } = context.conditions;
+
+  gsap.to(".box", {
+    rotation: isDesktop ? 360 : 180, // spin further if desktop
+    duration: reduceMotion ? 0 : 2 // skip to the end if prefers-reduced-motion
+  });
+
+  let panels = gsap.utils.toArray(".panel");
 // we'll create a ScrollTrigger for each panel just to track when each panel's top hits the top of the viewport (we only need this for snapping)
 let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
 
@@ -32,13 +57,12 @@ panels.forEach((panel, i) => {
     pinSpacing: false 
   });
 });
-
-
+  
 // home banner
 let home1 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel--about',
-        start:'top 800px',
+        start:isDesktop ? 'top 800px' : 'top 400px' ,
         end:'bottom =+300px',
         scrub:1,
     }
@@ -46,19 +70,19 @@ let home1 = gsap.timeline({
 let home2 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel--about',
-        start:'top 800px',
+        start:isDesktop ? 'top 800px' : 'top 400px' ,
         end:'bottom =+300px',
         scrub:1,
     }
 });
 
 home1.to('.banner__heading--right',{
-    x:-300,
+    x:isDesktop ? '-300px': '-100px' ,
     opacity:0,
     duration:1,
 })  
 home2.to('.banner__heading--left',{
-    x:300,
+    x:isDesktop ? '300px': '100px' ,
     opacity:0,
     duration:1,
 })
@@ -68,8 +92,8 @@ home2.to('.banner__heading--left',{
 let about1 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-about',
-        start:'top 800px',
-        end:'bottom =+300px',
+        start:isDesktop ? 'top 800px' : 'top 380px' ,
+        end:isDesktop ? 'bottom =+300px' : 'bottom end' ,
         scrub:1,
     }
 });
@@ -77,19 +101,19 @@ let about1 = gsap.timeline({
 let about2 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-about',
-        start:'top 800px',
-        end:'bottom =+300px',
+        start:isDesktop ? 'top 800px' : 'top 380px' ,
+        end:isDesktop ? 'bottom =+300px' : 'bottom end' ,
         scrub:1,
     }
 });
 
 about1.to('.banner__heading--right1',{
-    x:-300,
+    x:isDesktop ? '-300px': '-100px' ,
     opacity:0,
     duration:1,
 })  
 about2.to('.banner__heading--left1',{  
-    x:300,
+    x:isDesktop ? '300px': '100px' ,
     opacity:0,
     duration:1,
 })
@@ -99,8 +123,8 @@ about2.to('.banner__heading--left1',{
 let services1 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-services',
-        start:'top 550px',
-        end:'bottom =+300px',
+        start:isDesktop ? 'top 550px' : 'top 450px' ,
+        end:isDesktop ? 'bottom =+300px' : 'bottom end' ,
         scrub:1,
     }
 });
@@ -108,19 +132,19 @@ let services1 = gsap.timeline({
 let services2 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-services',
-        start:'top 550px',
-        end:'bottom =+300px',
+        start:isDesktop ? 'top 550px' : 'top 450px' ,
+        end:isDesktop ? 'bottom =+300px' : 'bottom end' ,
         scrub:1,
     }
 });
 
 services1.to('.banner__heading--right2',{
-    x:-300,
+    x:isDesktop ? '-300px': '-100px' ,
     opacity:0,
     duration:1,
 })  
 services2.to('.banner__heading--left2',{
-    x:300,
+    x:isDesktop ? '300px': '100px' ,
     opacity:0,
     duration:1,
 })
@@ -129,8 +153,8 @@ services2.to('.banner__heading--left2',{
 let case1 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-case',
-        start:'top 550px',
-        end:'bottom =+300px',
+        start:isDesktop ? 'top 550px' : 'top 450px' ,
+        end:isDesktop ? 'bottom =+300px' : 'bottom end' ,
         scrub:1,
     }
 });
@@ -138,21 +162,39 @@ let case1 = gsap.timeline({
 let case2 = gsap.timeline({
     scrollTrigger: {
         trigger:'.panel-banner-case',
-        start:'top 550px',
-        end:'bottom =+300px',
+        start:isDesktop ? 'top 550px' : 'top 450px' ,
+        end:isDesktop ? 'bottom =+300px' : 'bottom end' ,
         scrub:1,
     }
 });
 
 case1.to('.banner__heading--right3',{
-    x:-300,
+    x:isDesktop ? '-300px': '-100px' ,
     opacity:0,
     duration:1,
 })  
 case2.to('.banner__heading--left3',{
-    x:300,
+    x:isDesktop ? '300px': '100px' ,
     opacity:0,
     duration:1,
+})
+
+
+  return () => { 
+    // optionally return a cleanup function that will be called when none of the conditions match anymore (after having matched)
+    // it'll automatically call context.revert() - do NOT do that here . Only put custom cleanup code here.
+  }
+}); 
+var tabEl = document.querySelectorAll('button[data-bs-toggle="tab"]')
+// console.log(tabEl);
+tabEl.forEach(elm => {
+    elm.addEventListener('show.bs.tab', function (event) {
+        console.log('amrit');
+        console.log(  event.target);
+        console.log( event.relatedTarget);
+      event.target // newly activated tab
+      event.relatedTarget // previous active tab
+    })
 })
 
 

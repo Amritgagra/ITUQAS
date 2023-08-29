@@ -672,10 +672,6 @@ a {
   -webkit-animation: fadeinright 0.5s linear;
           animation: fadeinright 0.5s linear;
 }
-.tab-pane.active p:not(.text__primary) {
-  -webkit-animation: fadein 1s linear;
-          animation: fadein 1s linear;
-}
 
 @media screen and (min-width: 1700px) {
   .container {

@@ -324,7 +324,4 @@ br {
     p.text__primary {
         animation: fadeinright .5s linear;
     }
-    p:not(.text__primary) {
-        animation: fadein 1s linear;
-    }
   }
