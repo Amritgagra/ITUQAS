@@ -17,6 +17,11 @@
 .contact-form {
   max-width: 800px;
 }
+@media screen and (max-width: 1200px) {
+  .contact-form {
+    padding-bottom: 100px;
+  }
+}
 .contact-form .form-label {
   font-family: "Cabin", sans-serif;
   font-size: 16px;

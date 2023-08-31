@@ -9,9 +9,9 @@
 
     &-banner {
         min-height: calc(100vh - 103px);
-        @include mq(lg) {
-            min-height: calc(80vh - 93px);
-        }
+        // @include mq(sm) {
+        //     min-height: calc(80vh - 93px);
+        // }
     }
     @include mq(md) {
         min-height: 852px;

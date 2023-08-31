@@ -116,7 +116,7 @@
 }
 @media screen and (max-width: 992px) {
   .header.header-accent .navbar {
-    border-radius: 20px 20px 0 0;
+    border-radius: 0;
   }
 }
 .header.header-accent .navbar.active {

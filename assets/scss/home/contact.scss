@@ -11,6 +11,9 @@
 
     &-form{
         max-width: 800px;
+        @include mq(xl){
+           padding-bottom: 100px;
+         }
         .form-label
         {
             font-family: 'Cabin', sans-serif;

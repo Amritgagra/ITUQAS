@@ -250,10 +250,6 @@ a {
   color: inherit;
 }
 
-.min-h-md {
-  min-height: 626px;
-}
-
 .min-h-sm {
   min-height: 300px;
 }
@@ -292,6 +288,15 @@ a {
   margin-top: 130px;
 }
 
+.pt-80 {
+  padding-top: 80px;
+}
+@media screen and (max-width: 992px) {
+  .pt-80 {
+    padding-top: 150px;
+  }
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -320,6 +325,24 @@ a {
 
 .mt-50 {
   margin-top: 50px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+@media screen and (max-width: 992px) {
+  .mt-80 {
+    margin-top: 0;
+  }
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+@media screen and (max-width: 992px) {
+  .mt-100 {
+    margin-top: 0;
+  }
 }
 
 .mb-70 {
@@ -517,7 +540,7 @@ a {
 }
 
 .min-h-md {
-  min-height: 630px !important;
+  min-height: 670px !important;
 }
 
 .max-w-lg {

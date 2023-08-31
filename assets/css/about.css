@@ -16,11 +16,6 @@
 .about-us-banner {
   min-height: calc(100vh - 103px);
 }
-@media screen and (max-width: 992px) {
-  .about-us-banner {
-    min-height: calc(80vh - 93px);
-  }
-}
 @media screen and (max-width: 768px) {
   .about-us {
     min-height: 852px;

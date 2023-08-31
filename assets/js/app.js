@@ -178,6 +178,14 @@ case2.to('.banner__heading--left3',{
     opacity:0,
     duration:1,
 })
+// let panelContact = document.querySelector('.panel--contact')
+// ScrollTrigger.create({
+//     trigger: panelContact,
+//     start: () => panelContact.offsetHeight < window.innerHeight ? "top top" : "bottom bottom", // if it's shorter than the viewport, we prefer to pin it at the top
+//     pin: true, 
+//     pinSpacing: false 
+//   });
+
 
 
   return () => { 
